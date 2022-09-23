@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yijingwu-website/static/css/main.073c9b0a.css",
+    "main.js": "/yijingwu-website/static/js/main.60a7766f.js",
+    "static/js/787.b53db9e9.chunk.js": "/yijingwu-website/static/js/787.b53db9e9.chunk.js",
+    "static/media/logo.svg": "/yijingwu-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/yijingwu-website/index.html",
+    "main.073c9b0a.css.map": "/yijingwu-website/static/css/main.073c9b0a.css.map",
+    "main.60a7766f.js.map": "/yijingwu-website/static/js/main.60a7766f.js.map",
+    "787.b53db9e9.chunk.js.map": "/yijingwu-website/static/js/787.b53db9e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.60a7766f.js"
+  ]
+}
