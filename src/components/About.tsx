@@ -4,12 +4,12 @@ import Grid from "@mui/material/Grid";
 
 import ProfilePhoto from "../assets/ProfilePhoto.png";
 import { Text, Title } from "../MyLibrary";
-import { myMilkYellow70Alpha, myMintGreenC0Alpha } from "../MyLibrary/MyColors";
+import { myTextGrey, myMintGreenC0Alpha } from "../MyLibrary/MyColors";
 
 function Paragraph1() {
   return (
     <p>
-      <Text style={{ fontSize: 20, color: myMilkYellow70Alpha }}>
+      <Text style={{ fontSize: 20, color: myTextGrey }}>
         {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Felis bibendum ut tristique et. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Consequat mauris nunc congue nisi vitae suscipit tellus. Sed libero enim sed faucibus turpis in. Eget est lorem ipsum dolor sit amet consectetur adipiscing. "
         }
@@ -21,7 +21,7 @@ function Paragraph1() {
 function Paragraph2() {
   return (
     <p>
-      <Text style={{ fontSize: 20, color: myMilkYellow70Alpha }}>
+      <Text style={{ fontSize: 20, color: myTextGrey }}>
         {
           "Aliquam nulla facilisi cras fermentum odio eu feugiat. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Augue interdum velit euismod in pellentesque. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. A arcu cursus vitae congue mauris. "
         }
@@ -33,7 +33,7 @@ function Paragraph2() {
 function Paragraph3() {
   return (
     <p>
-      <Text style={{ fontSize: 20, color: myMilkYellow70Alpha }}>
+      <Text style={{ fontSize: 20, color: myTextGrey }}>
         {
           "Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. "
         }
@@ -44,7 +44,7 @@ function Paragraph3() {
 function Paragraph4() {
   return (
     <p>
-      <Text style={{ fontSize: 20, color: myMilkYellow70Alpha }}>
+      <Text style={{ fontSize: 20, color: myTextGrey }}>
         {"Here are a few technologies I’ve been working with recently:"}
       </Text>
     </p>

@@ -1,27 +1,13 @@
 import React from "react";
 
-import Button from "@mui/material/Button";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-import { Text } from "../MyLibrary";
+import { Button, Text } from "../MyLibrary";
 import {
-  myMilkYellow70Alpha,
+  myTextGrey,
   myMilkYellowC0Alpha,
   myMintGreen,
 } from "../MyLibrary/MyColors";
 
 function Contact() {
-  const buttonTheme = createTheme({
-    palette: {
-      primary: {
-        main: "#c2ded1",
-      },
-      secondary: {
-        main: "#000000",
-      },
-    },
-  });
-
   return (
     <div
       id="contact"
@@ -57,7 +43,7 @@ function Contact() {
         style={{
           fontFamily: "Calibre-Regular",
           fontSize: 20,
-          color: myMilkYellow70Alpha,
+          color: myTextGrey,
           marginBottom: 30,
         }}
       >
@@ -65,19 +51,7 @@ function Contact() {
         tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu
         felis bibendum. Dui vivamus arcu felis bibendum.
       </Text>
-
-      <ThemeProvider theme={buttonTheme}>
-        <Button
-          variant="outlined"
-          style={{
-            fontFamily: "SFMono-Regular",
-            fontSize: 14,
-          }}
-          href={"mailto:yijingwu.w@gmail.com"}
-        >
-          {"Say Hi"}
-        </Button>
-      </ThemeProvider>
+      <Button content={"Say Hi"} link={"mailto:yijingwu.w@gmail.com"} />
     </div>
   );
 }

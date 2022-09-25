@@ -1,6 +1,6 @@
 import React from "react";
 import { myNavy } from "../MyLibrary/MyColors";
-import Text from "../MyLibrary/Text";
+import { Text } from "../MyLibrary";
 
 function Footer() {
   return (

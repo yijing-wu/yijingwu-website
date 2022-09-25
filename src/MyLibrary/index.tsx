@@ -1,4 +1,5 @@
+import Button from "./Button";
 import Text from "./Text";
 import Title from "./Title";
 
-export { Text, Title };
+export { Button, Text, Title };

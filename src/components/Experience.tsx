@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { Text, Title } from "../MyLibrary";
-import {
-  myMilkYellow70Alpha,
-  myMintGreen,
-  myNavy,
-} from "../MyLibrary/MyColors";
+import { myTextGrey, myMintGreen, myNavy } from "../MyLibrary/MyColors";
 
 function Experience() {
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
   const [mouseFocused, setMouseFocused] = useState(-1);
 
   const jobsData = [
@@ -54,7 +50,7 @@ function Experience() {
     <div
       id="experience"
       style={{
-        paddingTop: 100,
+        paddingTop: 150,
         paddingBottom: 100,
       }}
     >
@@ -94,7 +90,7 @@ function Experience() {
                         border: "none",
                         borderLeftWidth: 2,
                         borderLeftStyle: "solid",
-                        borderLeftColor: myMilkYellow70Alpha,
+                        borderLeftColor: myTextGrey,
                         paddingLeft: 20,
                         paddingRight: 20,
                         cursor: "pointer",
@@ -104,7 +100,7 @@ function Experience() {
                         color:
                           index === selected || index === mouseFocused
                             ? myMintGreen
-                            : myMilkYellow70Alpha,
+                            : myTextGrey,
                         backgroundColor:
                           index === selected || index === mouseFocused
                             ? "#4a566b"
@@ -152,7 +148,7 @@ function Experience() {
             <Text
               style={{
                 fontFamily: "SFMono-Regular",
-                color: myMilkYellow70Alpha,
+                color: myTextGrey,
               }}
             >
               {jobsData[selected].time}
@@ -170,7 +166,7 @@ function Experience() {
                     marginTop: index === 0 ? 15 : 10,
                   }}
                 >
-                  <Text style={{ color: myMilkYellow70Alpha, fontSize: 18 }}>
+                  <Text style={{ color: myTextGrey, fontSize: 18 }}>
                     {duty}
                   </Text>
                 </div>
