@@ -106,7 +106,14 @@ export default function OtherProjects() {
           .slice(0, onShowMore ? otherProjects.length : 3)
           .map((project, index) => {
             return (
-              <Grid item xs={12} sm={6} md={4} style={{ marginBottom: 20 }}>
+              <Grid
+                key={index}
+                item
+                xs={12}
+                sm={6}
+                md={4}
+                style={{ marginBottom: 20 }}
+              >
                 <div
                   style={{
                     backgroundColor: myLightNavy,
@@ -170,9 +177,12 @@ export default function OtherProjects() {
                       bottom: 10,
                     }}
                   >
-                    {project.tools.map((tool) => {
+                    {project.tools.map((tool, index) => {
                       return (
-                        <li style={{ display: "inline", marginRight: 10 }}>
+                        <li
+                          key={index}
+                          style={{ display: "inline", marginRight: 10 }}
+                        >
                           {tool}
                         </li>
                       );

@@ -111,9 +111,10 @@ function FeaturedProjectDetails({
             padding: 0,
           }}
         >
-          {tools.map((tool) => {
+          {tools.map((tool, index) => {
             return (
               <li
+                key={index}
                 style={{
                   display: "inline",
                   marginLeft: textRightAlign ? 10 : 0,
