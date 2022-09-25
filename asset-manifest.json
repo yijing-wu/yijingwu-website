@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/yijingwu-website/static/css/main.2d947a7f.css",
-    "main.js": "/yijingwu-website/static/js/main.5bd57742.js",
+    "main.css": "/yijingwu-website/static/css/main.77fabeea.css",
+    "main.js": "/yijingwu-website/static/js/main.88190dbf.js",
     "static/js/787.b53db9e9.chunk.js": "/yijingwu-website/static/js/787.b53db9e9.chunk.js",
     "static/media/ProfilePhoto.png": "/yijingwu-website/static/media/ProfilePhoto.7e5adaee377ccf56b425.png",
+    "static/media/camera-calibration.png": "/yijingwu-website/static/media/camera-calibration.5394c58abe4197d28843.png",
     "static/media/SFMono-SemiboldItalic.woff": "/yijingwu-website/static/media/SFMono-SemiboldItalic.10eb596e904940cd1aeb.woff",
     "static/media/SFMono-MediumItalic.woff": "/yijingwu-website/static/media/SFMono-MediumItalic.44eb696cddc47f6012d6.woff",
     "static/media/SFMono-RegularItalic.woff": "/yijingwu-website/static/media/SFMono-RegularItalic.3a20a00dfdeb4ba53847.woff",
@@ -34,12 +35,12 @@
     "static/media/Calibre-MediumItalic.woff2": "/yijingwu-website/static/media/Calibre-MediumItalic.7aa140573fd9ed30ae01.woff2",
     "static/media/Calibre-Medium.woff2": "/yijingwu-website/static/media/Calibre-Medium.568dce56f869a519a015.woff2",
     "index.html": "/yijingwu-website/index.html",
-    "main.2d947a7f.css.map": "/yijingwu-website/static/css/main.2d947a7f.css.map",
-    "main.5bd57742.js.map": "/yijingwu-website/static/js/main.5bd57742.js.map",
+    "main.77fabeea.css.map": "/yijingwu-website/static/css/main.77fabeea.css.map",
+    "main.88190dbf.js.map": "/yijingwu-website/static/js/main.88190dbf.js.map",
     "787.b53db9e9.chunk.js.map": "/yijingwu-website/static/js/787.b53db9e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d947a7f.css",
-    "static/js/main.5bd57742.js"
+    "static/css/main.77fabeea.css",
+    "static/js/main.88190dbf.js"
   ]
 }
