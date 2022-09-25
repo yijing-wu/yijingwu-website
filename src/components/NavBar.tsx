@@ -10,7 +10,7 @@ import Slide from "@mui/material/Slide";
 import { myMintGreen, myNavy } from "../MyLibrary/MyColors";
 import Logo from "../assets/Logo/Logo-pure.png";
 
-interface Props {
+interface HideOnScrollProps {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -19,7 +19,7 @@ interface Props {
   children: React.ReactElement;
 }
 
-function HideOnScroll(props: Props) {
+function HideOnScroll(props: HideOnScrollProps) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.

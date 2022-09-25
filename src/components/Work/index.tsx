@@ -1,6 +1,8 @@
 import React from "react";
+
 import { Title } from "../../MyLibrary";
-import FeaturedProject from "./FeaturedProject";
+import FeaturedProjects from "./FeaturedProjects";
+import OtherProjects from "./OtherProjects";
 
 function Work() {
   return (
@@ -16,7 +18,8 @@ function Work() {
         content={"Some Things I’ve Built"}
         style={{ marginBottom: 40 }}
       />
-      <FeaturedProject />
+      <FeaturedProjects />
+      <OtherProjects />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 import CameraCalibrationProfile from "../../assets/projects/camera-calibration.png";
 import FeaturedProjectWidget from "./FeaturedProjectWidget";
 
-export default function FeaturedProject() {
+export default function FeaturedProjects() {
   const featuredProjects = [
     {
       picture: CameraCalibrationProfile,

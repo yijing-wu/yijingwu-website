@@ -10,6 +10,7 @@ export interface ButtonProps {
   buttonPrimaryColor?: string;
   link?: string;
   fontSize?: number;
+  onClick?: () => void;
 }
 
 export default function Button({
@@ -17,7 +18,7 @@ export default function Button({
   buttonPrimaryColor,
   link,
   fontSize = 14,
-  ...rest
+  onClick,
 }: ButtonProps) {
   const buttonTheme = createTheme({
     palette: {
@@ -34,10 +35,11 @@ export default function Button({
     <ThemeProvider theme={buttonTheme}>
       <MUIButton
         variant="outlined"
+        onClick={onClick ? onClick : () => {}}
         href={link}
         style={{
           fontFamily: "SFMono-Regular",
-          fontSize: 14,
+          fontSize: fontSize,
         }}
       >
         {content}

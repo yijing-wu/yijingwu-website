@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
 import Grid from "@mui/material/Grid";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
-import { Button, Text } from "../../MyLibrary";
+import { Button, Links, Text } from "../../MyLibrary";
 import {
   myLightNavy,
   myMilkYellow,
@@ -57,8 +55,6 @@ function FeaturedProjectDetails({
   githubLink,
   buttonLink,
 }: FeaturedProjectDetailsProps) {
-  const [linkMouseFocused, setLinkMouseFocused] = useState("none");
-
   return (
     <>
       <Text
@@ -89,7 +85,7 @@ function FeaturedProjectDetails({
             height: 150,
             left: textRightAlign ? "-20%" : "0%",
             position: "absolute",
-            borderRadius: "2%",
+            borderRadius: 6,
           }}
         >
           <Text
@@ -131,46 +127,14 @@ function FeaturedProjectDetails({
         </ul>
         {githubLink || externalLink ? (
           <div style={{ marginBottom: 10 }}>
-            {githubLink ? (
-              <a
-                href={githubLink}
-                style={{
-                  color:
-                    linkMouseFocused === "github" ? myMintGreen : myMilkYellow,
-                  marginLeft: textRightAlign ? 15 : 0,
-                  marginRight: textRightAlign ? 0 : 15,
-                }}
-                onMouseEnter={() => {
-                  setLinkMouseFocused("github");
-                }}
-                onMouseLeave={() => {
-                  setLinkMouseFocused("none");
-                }}
-              >
-                <GitHubIcon />
-              </a>
-            ) : null}
-            {externalLink ? (
-              <a
-                href={externalLink}
-                style={{
-                  color:
-                    linkMouseFocused === "external"
-                      ? myMintGreen
-                      : myMilkYellow,
-                  marginLeft: textRightAlign ? 15 : 0,
-                  marginRight: textRightAlign ? 0 : 15,
-                }}
-                onMouseEnter={() => {
-                  setLinkMouseFocused("external");
-                }}
-                onMouseLeave={() => {
-                  setLinkMouseFocused("none");
-                }}
-              >
-                <OpenInNewIcon />
-              </a>
-            ) : null}
+            <Links
+              rightAlign={textRightAlign}
+              buttonColor={myMilkYellow}
+              marginWidth={15}
+              buttonHoverColor={myMintGreen}
+              githubLink={githubLink}
+              externalLink={externalLink}
+            />
           </div>
         ) : null}
         {buttonLink ? (
