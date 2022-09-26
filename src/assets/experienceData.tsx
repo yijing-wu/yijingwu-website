@@ -1,39 +1,93 @@
+import { myTextLightGrey } from "../MyLibrary/MyColors";
+
+const highlightStyle = {
+  display: "inline",
+  fontFamily: "Calibre-Medium",
+  color: myTextLightGrey,
+};
+
 const jobsData = [
   {
     company: "Upduo",
     abbreviation: "Upduo",
     title: "Software Engineer Co-op",
-    time: "September 2022 - December 2022",
-    location: "US",
+    time: "June 2022 - December 2022",
+    location: "United States",
     duties: [
-      "Ac ut consequat semper viverra. Integer enim neque volutpat ac tincidunt vitae semper quis. ",
-      "Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. ",
-      "Sed risus pretium quam vulputate dignissim suspendisse in est ante. ",
-      "Convallis tellus id interdum velit. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. ",
+      <div>
+        Worked as a full-stack engineer to build and improve Upduo's web/mobile
+        app via React, React Native and Django
+      </div>,
     ],
   },
   {
     company: "Huawei Technologies",
     abbreviation: "Huawei",
-    title: "Software Engineer Co-op",
-    time: "September 2022 - December 2022",
-    location: "US",
+    title: "Algorithm Engineer Intern",
+    time: "July 2020 - September 2020",
+    location: "Shanghai",
     duties: [
-      "Arcu cursus vitae congue mauris rhoncus aenean vel elit. Morbi leo urna molestie at elementum eu facilisis sed. ",
-      "Et leo duis ut diam quam. Lectus proin nibh nisl condimentum id venenatis a. ",
-      "Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Turpis in eu mi bibendum.",
+      <div>
+        Applied calibration and distortion correction algorithm to process video
+        flows of camera sensor for self-driving vehicles
+      </div>,
+      <div>
+        Achieved reduction of distortion correction errors from 1.395 ± 0.136
+        pixels to 0.055 ± 0.192 pixels through cylindrical projection and
+        single-point mapping
+      </div>,
+      <div>
+        Increased processing efficiency of DSP by developing mapping table and
+        video processing algorithms for digital signal processors based on
+        <div style={highlightStyle}>{` OpenCV`}</div>
+      </div>,
     ],
   },
   {
-    company: "Tongji University",
-    abbreviation: "Tongji",
-    title: "Software Engineer Co-op",
-    time: "September 2022 - December 2022",
-    location: "US",
+    company: "Digital Image Lab",
+    abbreviation: "DIL",
+    title: "Research Assistant",
+    time: "September 2019 - June 2021",
+    location: "Tongji University, Shanghai",
     duties: [
-      "Sed risus pretium quam vulputate dignissim suspendisse in est ante. ",
-      "Convallis tellus id interdum velit. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. ",
-      "Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Turpis in eu mi bibendum.",
+      <div>
+        Constructed classification models of brain during working memory
+        maintenance based on 128-channel EEG dataset for material-specific
+        Sternberg task through feature selection and machine learning
+      </div>,
+      <div>
+        Extracted features of EEG signals by empirical mode decomposition (EMD)
+        and phase space reconstruction (PSR){" "}
+      </div>,
+      <div>
+        Executed Support Vector Machine (SVM), K-nearest neighbor (KNN), Random
+        Forest (RF), and nested cross-validation{" "}
+      </div>,
+      <div>
+        Accomplished improvement of classification performance from 71.45% to
+        91.82% under SVM and published the result in an IEEE paper as the first
+        author{" "}
+      </div>,
+    ],
+  },
+  {
+    company: "Positioning and Navigation Lab",
+    abbreviation: "PNL",
+    title: "Research Assistant",
+    time: "April 2019 - June 2021",
+    location: "Tongji University, Shanghai",
+    duties: [
+      <div>
+        Built a Barrier-Free Positioning and Navigation System for people with
+        disabilities by performing image segmentation via PyTorch for indoor map
+        construction as well as detecting obstacles based on the YoloV3
+        algorithm{" "}
+      </div>,
+      <div>
+        Guided a four-person research team and participated in the development
+        of AR assisted module for indoor positioning and navigation system in
+        China International Import Expo (CIIE) in 2019 and 2020{" "}
+      </div>,
     ],
   },
 ];

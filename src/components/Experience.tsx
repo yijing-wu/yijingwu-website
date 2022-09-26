@@ -13,13 +13,13 @@ function Experience() {
       id="experience"
       style={{
         paddingTop: 150,
-        paddingBottom: 100,
+        paddingBottom: 80,
       }}
     >
       <div
         style={{
           width: 700,
-          minHeight: 350,
+          minHeight: 380,
           margin: "auto",
         }}
       >

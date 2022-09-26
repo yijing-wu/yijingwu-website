@@ -6,11 +6,9 @@ import {
   myMilkYellowC0Alpha,
   myMintGreen,
 } from "../MyLibrary/MyColors";
+import { myName, myBriefIntro } from "../assets/myData";
 
 function Home() {
-  const briefIntro =
-    "I’m a software engineer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
   return (
     <div
       id="head"
@@ -29,7 +27,7 @@ function Home() {
         Hi, this is
       </Text>
       <Text style={{ fontFamily: "Calibre-Semibold", fontSize: 80 }}>
-        Yijing Wu
+        {myName}
       </Text>
       <Text
         style={{
@@ -38,12 +36,16 @@ function Home() {
           color: myMilkYellowC0Alpha,
         }}
       >
-        Lorem ipsum dolor sit amet
+        {"I write Code."}
       </Text>
-      <div style={{ width: "50%", marginBottom: 20 }}>
-        <Text style={{ fontSize: 20, color: myTextGrey }}>{briefIntro}</Text>
+      <div style={{ width: "60%", marginBottom: 30 }}>
+        <Text style={{ fontSize: 22, color: myTextGrey, lineHeight: 1.3 }}>
+          {myBriefIntro}
+        </Text>
       </div>
-      <Button>{"RESUME"}</Button>
+      <Button>
+        <div style={{ padding: 5, fontSize: 15 }}>{"RESUME"}</div>
+      </Button>
     </div>
   );
 }

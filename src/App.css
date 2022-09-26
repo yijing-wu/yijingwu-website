@@ -9,9 +9,12 @@
 }
 
 /* About */
-#about .skills-list {
+
+#about .education-list,
+.skills-list {
   width: 460px;
   margin: 0;
+  margin-top: 3px;
   padding: 0;
 }
 
