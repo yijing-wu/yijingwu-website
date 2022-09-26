@@ -12,9 +12,8 @@ import CameraCalibrationProfile from "./projects/camera-calibration.png";
 //     description:
 //       "Research about the camera calibration and distortion correction algorithm for self-driving vehicles",
 //     tools: ["Python", "C", "OpenCV", "Anaconda"],
-//     externalLink: "",
+//     mainLink: "",
 //     githubLink: "",
-//     buttonLink: "/cameracalibration",
 //   };
 
 const cameraCalibration = {
@@ -25,9 +24,8 @@ const cameraCalibration = {
   description:
     "Research about the camera calibration and distortion correction algorithm for self-driving vehicles",
   tools: ["Python", "C", "OpenCV", "Anaconda"],
-  externalLink: "",
+  mainLink: "/cameracalibration",
   githubLink: "",
-  buttonLink: "/cameracalibration",
 };
 
 const smithChart = {
@@ -36,9 +34,8 @@ const smithChart = {
   location: "Tongji University",
   description: "-",
   tools: ["Matlab", "Simulink"],
+  mainLink: "/smithchart",
   githubLink: "",
-  externalLink: "/smithchart",
-  buttonLink: "",
 };
 
 // export components

@@ -157,10 +157,10 @@ export default function Archieve() {
                     rightAlign={false}
                     buttonColor={myTextGrey}
                     iconSize={20}
-                    marginWidth={15}
+                    marginWidth={10}
                     buttonHoverColor={myMintGreen}
+                    mainLink={project.mainLink}
                     githubLink={project.githubLink}
-                    externalLink={project.externalLink}
                   />
                 </TableCell>
               </TableRow>

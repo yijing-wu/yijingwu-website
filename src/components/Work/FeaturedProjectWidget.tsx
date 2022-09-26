@@ -41,9 +41,8 @@ interface FeaturedProjectDetailsProps {
   title: string;
   description: React.ReactNode;
   tools: string[];
-  externalLink?: string;
+  mainLink?: string;
   githubLink?: string;
-  buttonLink?: string;
 }
 
 function FeaturedProjectDetails({
@@ -51,9 +50,8 @@ function FeaturedProjectDetails({
   title,
   description,
   tools,
-  externalLink,
+  mainLink,
   githubLink,
-  buttonLink,
 }: FeaturedProjectDetailsProps) {
   return (
     <>
@@ -126,20 +124,21 @@ function FeaturedProjectDetails({
             );
           })}
         </ul>
-        {githubLink || externalLink ? (
-          <div style={{ marginBottom: 10 }}>
-            <Links
-              rightAlign={textRightAlign}
-              buttonColor={myMilkYellow}
-              marginWidth={15}
-              buttonHoverColor={myMintGreen}
-              githubLink={githubLink}
-              externalLink={externalLink}
-            />
-          </div>
-        ) : null}
-        {buttonLink ? (
-          <Button content={"Learn More"} link={buttonLink} />
+        {mainLink || githubLink ? (
+          githubLink ? (
+            <div style={{ marginBottom: 10 }}>
+              <Links
+                rightAlign={textRightAlign}
+                buttonColor={myMilkYellow}
+                marginWidth={15}
+                buttonHoverColor={myMintGreen}
+                mainLink={mainLink}
+                githubLink={githubLink}
+              />
+            </div>
+          ) : (
+            <Button content={"Learn More"} link={mainLink} />
+          )
         ) : null}
       </div>
     </>
@@ -152,9 +151,8 @@ export interface FeaturedProjectWidgetProps {
   title: string;
   description: React.ReactNode;
   tools: string[];
-  externalLink?: string;
+  mainLink?: string;
   githubLink?: string;
-  buttonLink?: string;
 }
 
 export default function FeaturedProjectWidget({
@@ -163,9 +161,8 @@ export default function FeaturedProjectWidget({
   title,
   description,
   tools,
-  externalLink,
+  mainLink,
   githubLink,
-  buttonLink,
 }: FeaturedProjectWidgetProps) {
   const isOdd = index % 2 === 1;
 
@@ -182,9 +179,8 @@ export default function FeaturedProjectWidget({
               title={title}
               description={description}
               tools={tools}
-              externalLink={externalLink}
+              mainLink={mainLink}
               githubLink={githubLink}
-              buttonLink={buttonLink}
             />
           </Grid>
         </>
@@ -196,9 +192,8 @@ export default function FeaturedProjectWidget({
               title={title}
               description={description}
               tools={tools}
-              externalLink={externalLink}
+              mainLink={mainLink}
               githubLink={githubLink}
-              buttonLink={buttonLink}
             />
           </Grid>
           <Grid item xs={7} style={{ position: "relative" }}>

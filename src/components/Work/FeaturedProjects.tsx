@@ -1,6 +1,6 @@
 import React from "react";
-import { FeaturedProjectsData } from "../../assets/projectsData";
 
+import { FeaturedProjectsData } from "../../assets/projectsData";
 import FeaturedProjectWidget from "./FeaturedProjectWidget";
 
 export default function FeaturedProjects() {
@@ -15,9 +15,8 @@ export default function FeaturedProjects() {
             title={featuredProject.title}
             description={featuredProject.description}
             tools={featuredProject.tools}
-            externalLink={featuredProject.externalLink}
+            mainLink={featuredProject.mainLink}
             githubLink={featuredProject.githubLink}
-            buttonLink={featuredProject.buttonLink}
           />
         );
       })}

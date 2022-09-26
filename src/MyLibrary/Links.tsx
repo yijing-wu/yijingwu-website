@@ -12,7 +12,7 @@ export interface LinksProps {
   iconSize?: number;
   marginWidth?: number;
   buttonHoverColor?: string;
-  externalLink?: string;
+  mainLink?: string;
   githubLink?: string;
 }
 
@@ -22,7 +22,7 @@ export default function Links({
   iconSize = 24,
   marginWidth = 15,
   buttonHoverColor = myMintGreen,
-  externalLink,
+  mainLink,
   githubLink,
   ...rest
 }: LinksProps) {
@@ -49,9 +49,9 @@ export default function Links({
           <GitHubIcon style={{ fontSize: iconSize }} />
         </Link>
       ) : null}
-      {externalLink ? (
+      {mainLink ? (
         <Link
-          to={externalLink}
+          to={mainLink}
           style={{
             color:
               linkMouseFocused === "external" ? buttonHoverColor : buttonColor,

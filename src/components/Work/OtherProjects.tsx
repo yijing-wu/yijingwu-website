@@ -96,8 +96,8 @@ export default function OtherProjects() {
                     <Links
                       iconSize={22}
                       marginWidth={10}
+                      mainLink={project.mainLink}
                       githubLink={project.githubLink}
-                      externalLink={project.externalLink}
                     />
                   </div>
                 </div>
