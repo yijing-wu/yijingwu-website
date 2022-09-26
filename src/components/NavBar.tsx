@@ -38,7 +38,6 @@ function HideOnScroll(props: HideOnScrollProps) {
 export default function NavBar() {
   const navItems = [
     { name: "About", url: "/#about" },
-    // { name: "Education", url: "#education" },
     { name: "Experience", url: "/#experience" },
     { name: "Work", url: "/#work" },
     { name: "Contact", url: "/#contact" },

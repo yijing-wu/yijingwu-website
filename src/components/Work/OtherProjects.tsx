@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 import Grid from "@mui/material/Grid";
 import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
+import { Link } from "react-router-dom";
 
 import { Button, Links, Text } from "../../MyLibrary";
 import { myLightNavy, myMintGreen, myTextGrey } from "../../MyLibrary/MyColors";
-import { Link } from "react-router-dom";
+import { OtherProjectsData } from "../../assets/projectsData";
 
 export default function OtherProjects() {
   const [onShowMore, setOnShowMore] = useState(false);
@@ -13,62 +14,6 @@ export default function OtherProjects() {
   const _handleShowMore = () => {
     setOnShowMore(!onShowMore);
   };
-
-  const otherProjects = [
-    {
-      title: "Camera Calibration1",
-      description: (
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-          nulla tristique et.
-        </div>
-      ),
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
-      externalLink: "/",
-      githubLink: "/",
-      buttonLink: "/",
-    },
-    {
-      title: "Camera Calibration Lorem ipsum dolor",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Felis bibendum ut tristique et.",
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
-      githubLink: "/",
-    },
-    {
-      title: "Camera Calibration3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Felis bibendum ut tristique et.",
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
-    },
-    {
-      title: "Camera Calibration4",
-      description: (
-        <div>
-          Eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-          nulla tristique et.
-        </div>
-      ),
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
-      externalLink: "/",
-      githubLink: "/",
-      buttonLink: "/",
-    },
-    {
-      title: "Camera Calibration5",
-      description: (
-        <div>
-          Aliquam nulla tristique et. Eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-        </div>
-      ),
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
-      externalLink: "/",
-      githubLink: "/",
-      buttonLink: "/",
-    },
-  ];
 
   return (
     <div style={{ textAlign: "center", marginBottom: 100 }}>
@@ -103,96 +48,97 @@ export default function OtherProjects() {
           textAlign: "left",
         }}
       >
-        {otherProjects
-          .slice(0, onShowMore ? otherProjects.length : 3)
-          .map((project, index) => {
-            return (
-              <Grid
-                key={index}
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                style={{ marginBottom: 20 }}
+        {OtherProjectsData.slice(
+          0,
+          onShowMore ? OtherProjectsData.length : 3
+        ).map((project, index) => {
+          return (
+            <Grid
+              key={index}
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              style={{ marginBottom: 20 }}
+            >
+              <div
+                style={{
+                  backgroundColor: myLightNavy,
+                  borderRadius: 6,
+                  height: "90%",
+                  padding: 20,
+                  position: "relative",
+                }}
               >
                 <div
                   style={{
-                    backgroundColor: myLightNavy,
-                    borderRadius: 6,
-                    height: "90%",
-                    padding: 20,
-                    position: "relative",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    marginBottom: 15,
                   }}
                 >
+                  <FolderOutlinedIcon
+                    style={{
+                      color: myMintGreen,
+                      fontSize: 40,
+                      display: "flex",
+                      justifyContent: "flex-start",
+                    }}
+                  />
                   <div
                     style={{
+                      flex: 1,
                       display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-                      marginBottom: 15,
+                      justifyContent: "flex-end",
                     }}
                   >
-                    <FolderOutlinedIcon
-                      style={{
-                        color: myMintGreen,
-                        fontSize: 40,
-                        display: "flex",
-                        justifyContent: "flex-start",
-                      }}
+                    <Links
+                      iconSize={22}
+                      marginWidth={10}
+                      githubLink={project.githubLink}
+                      externalLink={project.externalLink}
                     />
-                    <div
-                      style={{
-                        flex: 1,
-                        display: "flex",
-                        justifyContent: "flex-end",
-                      }}
-                    >
-                      <Links
-                        iconSize={22}
-                        marginWidth={10}
-                        githubLink={project.githubLink}
-                        externalLink={project.externalLink}
-                      />
-                    </div>
                   </div>
-
-                  <Text
-                    style={{
-                      fontFamily: "Calibre-Medium",
-                      fontSize: 22,
-                      marginBottom: 8,
-                    }}
-                  >
-                    {project.title}
-                  </Text>
-                  <Text style={{ color: myTextGrey, marginBottom: 30 }}>
-                    {project.description}
-                  </Text>
-                  <ul
-                    style={{
-                      fontFamily: "SFMono-Regular",
-                      fontSize: 13,
-                      color: myTextGrey,
-                      padding: 0,
-                      position: "absolute",
-                      bottom: 10,
-                    }}
-                  >
-                    {project.tools.map((tool, index) => {
-                      return (
-                        <li
-                          key={index}
-                          style={{ display: "inline", marginRight: 10 }}
-                        >
-                          {tool}
-                        </li>
-                      );
-                    })}
-                  </ul>
                 </div>
-              </Grid>
-            );
-          })}
+
+                <Text
+                  style={{
+                    fontFamily: "Calibre-Medium",
+                    fontSize: 22,
+                    marginBottom: 8,
+                  }}
+                >
+                  {project.title}
+                </Text>
+                <Text style={{ color: myTextGrey, marginBottom: 30 }}>
+                  {project.description}
+                </Text>
+                <ul
+                  style={{
+                    fontFamily: "SFMono-Regular",
+                    fontSize: 13,
+                    color: myTextGrey,
+                    padding: 0,
+                    position: "absolute",
+                    bottom: 10,
+                  }}
+                >
+                  {project.tools.map((tool, index) => {
+                    return (
+                      <li
+                        key={index}
+                        style={{ display: "inline", marginRight: 10 }}
+                      >
+                        {tool}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </Grid>
+          );
+        })}
       </Grid>
       <div style={{ height: 50 }} />
       <Button

@@ -16,44 +16,7 @@ import {
   myTextGrey,
 } from "../MyLibrary/MyColors";
 import { Links, Text } from "../MyLibrary";
-
-const archievedProjects = [
-  {
-    year: "2021",
-    title: "Camera Calibration1",
-    location: "Frozen yoghurt",
-    tools: ["VS", "Code", "NPM", "XCode", "Java"],
-    externalLink: "externalLink",
-    githubLink: "/",
-    buttonLink: "/",
-  },
-  {
-    year: "2021",
-    title: "Camera Calibration2",
-    location: "Frozen yoghurt",
-    tools: [
-      "VS",
-      "Code",
-      "NPM",
-      "XCode",
-      "Java",
-      "Code",
-      "NPM",
-      "XCode",
-      "Java",
-    ],
-    // externalLink: "/",
-    githubLink: "/",
-    buttonLink: "/",
-  },
-  {
-    year: "2020",
-    title: "Smith Chart Tool",
-    location: "Tongji University",
-    tools: ["Matlab", "Simulink"],
-    externalLink: "/smithchart",
-  },
-];
+import { ArchievedProjectsData } from "../assets/projectsData";
 
 export default function Archieve() {
   const tableHeadStyles = {
@@ -113,7 +76,10 @@ export default function Archieve() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {archievedProjects.map((project) => (
+            {/* ordered by year */}
+            {ArchievedProjectsData.sort((a, b) => {
+              return b.year - a.year;
+            }).map((project) => (
               <TableRow
                 key={project.title}
                 sx={{
