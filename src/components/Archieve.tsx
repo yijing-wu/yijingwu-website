@@ -46,6 +46,13 @@ const archievedProjects = [
     githubLink: "/",
     buttonLink: "/",
   },
+  {
+    year: "2020",
+    title: "Smith Chart Tool",
+    location: "Tongji University",
+    tools: ["Matlab", "Simulink"],
+    externalLink: "/smithchart",
+  },
 ];
 
 export default function Archieve() {
@@ -60,6 +67,8 @@ export default function Archieve() {
       style={{
         paddingTop: 150,
         paddingBottom: 150,
+        paddingLeft: 10,
+        paddingRight: 10,
       }}
     >
       <Text

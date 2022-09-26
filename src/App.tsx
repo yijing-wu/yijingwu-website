@@ -22,6 +22,8 @@ import Home from "./components/Home";
 import Social from "./components/Social";
 import Archieve from "./components/Archieve";
 
+import SmithChart from "./projectPages/SmithChart";
+
 const router = createBrowserRouter(
   [
     {
@@ -34,7 +36,6 @@ const router = createBrowserRouter(
           <Experience />
           <Work />
           <Contact />
-          <Footer />
         </div>
       ),
       errorElement: <ErrorPage />,
@@ -46,6 +47,11 @@ const router = createBrowserRouter(
     {
       path: "/archieve",
       element: <Archieve />,
+    },
+    // projects
+    {
+      path: "/smithchart",
+      element: <SmithChart />,
     },
   ],
   { basename: process.env.PUBLIC_URL }
@@ -76,6 +82,7 @@ function App() {
         </Grid>
         <Grid item xs={10}>
           <RouterProvider router={router} />
+          <Footer />
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
