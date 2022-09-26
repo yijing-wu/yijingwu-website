@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -30,8 +31,8 @@ export default function Links({
   return (
     <>
       {githubLink ? (
-        <a
-          href={githubLink}
+        <Link
+          to={githubLink}
           style={{
             color:
               linkMouseFocused === "github" ? buttonHoverColor : buttonColor,
@@ -46,11 +47,11 @@ export default function Links({
           }}
         >
           <GitHubIcon style={{ fontSize: iconSize }} />
-        </a>
+        </Link>
       ) : null}
       {externalLink ? (
-        <a
-          href={externalLink}
+        <Link
+          to={externalLink}
           style={{
             color:
               linkMouseFocused === "external" ? buttonHoverColor : buttonColor,
@@ -65,7 +66,7 @@ export default function Links({
           }}
         >
           <OpenInNewIcon style={{ fontSize: iconSize }} />
-        </a>
+        </Link>
       ) : null}
     </>
   );
