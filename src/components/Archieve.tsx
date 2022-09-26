@@ -124,10 +124,9 @@ export default function Archieve() {
                 <TableCell style={{ border: 0 }}>
                   <Text
                     style={{
-                      fontSize: 15,
+                      fontSize: 16,
                       fontFamily: "SFMono-Medium",
                       color: myMintGreen,
-                      paddingBottom: 5,
                     }}
                   >
                     {project.year}
@@ -137,13 +136,17 @@ export default function Archieve() {
                   <Text
                     style={{
                       fontSize: 20,
+                      fontFamily: "Calibre-Medium",
+                      paddingTop: 5,
                     }}
                   >
                     {project.title}
                   </Text>
                 </TableCell>
                 <TableCell align="left" style={{ border: 0 }}>
-                  <Text style={{ fontSize: 18, color: myTextGrey }}>
+                  <Text
+                    style={{ fontSize: 18, color: myTextGrey, paddingTop: 5 }}
+                  >
                     {project.location}
                   </Text>
                 </TableCell>
@@ -178,6 +181,7 @@ export default function Archieve() {
                   <Links
                     rightAlign={false}
                     buttonColor={myTextGrey}
+                    iconSize={20}
                     marginWidth={15}
                     buttonHoverColor={myMintGreen}
                     githubLink={project.githubLink}

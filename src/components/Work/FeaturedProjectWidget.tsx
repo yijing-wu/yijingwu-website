@@ -168,7 +168,6 @@ export default function FeaturedProjectWidget({
   buttonLink,
 }: FeaturedProjectWidgetProps) {
   const isOdd = index % 2 === 1;
-  console.log(index, isOdd);
 
   return (
     <Grid container style={{ marginBottom: 100 }}>
