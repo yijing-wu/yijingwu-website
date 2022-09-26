@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 import { Button, Links, Text } from "../../MyLibrary";
@@ -137,7 +138,14 @@ function FeaturedProjectDetails({
               />
             </div>
           ) : (
-            <Button content={"Learn More"} link={mainLink} />
+            <Button>
+              <Link
+                to={mainLink ? mainLink : ""}
+                style={{ textDecoration: "none", color: myMintGreen }}
+              >
+                {"Learn More"}
+              </Link>
+            </Button>
           )
         ) : null}
       </div>

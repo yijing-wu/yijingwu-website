@@ -43,7 +43,7 @@ function Home() {
       <div style={{ width: "50%", marginBottom: 20 }}>
         <Text style={{ fontSize: 20, color: myTextGrey }}>{briefIntro}</Text>
       </div>
-      <Button content={"RESUME"} />
+      <Button>{"RESUME"}</Button>
     </div>
   );
 }

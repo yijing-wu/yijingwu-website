@@ -141,11 +141,9 @@ export default function OtherProjects() {
         })}
       </Grid>
       <div style={{ height: 50 }} />
-      <Button
-        content={onShowMore ? "Show Less" : "Show More"}
-        fontSize={14}
-        onClick={() => _handleShowMore()}
-      />
+      <Button fontSize={14} onClick={() => _handleShowMore()}>
+        {onShowMore ? "Show Less" : "Show More"}
+      </Button>
     </div>
   );
 }

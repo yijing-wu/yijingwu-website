@@ -51,7 +51,7 @@ function Contact() {
         tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu
         felis bibendum. Dui vivamus arcu felis bibendum.
       </Text>
-      <Button content={"Say Hi"} link={"mailto:yijingwu.w@gmail.com"} />
+      <Button link={"mailto:yijingwu.w@gmail.com"}>{"Say Hi"}</Button>
     </div>
   );
 }

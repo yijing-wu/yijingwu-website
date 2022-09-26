@@ -6,18 +6,18 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { myMintGreen } from "./MyColors";
 
 export interface ButtonProps {
-  content: string;
   buttonPrimaryColor?: string;
   link?: string;
   fontSize?: number;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
 export default function Button({
-  content,
   buttonPrimaryColor = myMintGreen,
   link,
   fontSize = 14,
+  children,
   onClick,
 }: ButtonProps) {
   const buttonTheme = createTheme({
@@ -39,10 +39,10 @@ export default function Button({
         href={link}
         style={{
           fontFamily: "SFMono-Regular",
-          fontSize: 14,
+          fontSize: fontSize,
         }}
       >
-        {content}
+        {children}
       </MUIButton>
     </ThemeProvider>
   );
