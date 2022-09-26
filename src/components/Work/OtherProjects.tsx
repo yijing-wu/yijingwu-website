@@ -5,10 +5,10 @@ import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 
 import { Button, Links, Text } from "../../MyLibrary";
 import { myLightNavy, myMintGreen, myTextGrey } from "../../MyLibrary/MyColors";
+import { Link } from "react-router-dom";
 
 export default function OtherProjects() {
   const [onShowMore, setOnShowMore] = useState(false);
-  const [onArchiveLinkHover, setOnArchiveLinkHover] = useState(false);
 
   const _handleShowMore = () => {
     setOnShowMore(!onShowMore);
@@ -81,10 +81,11 @@ export default function OtherProjects() {
       >
         {"Other Noteworthy Projects"}
       </Text>
+
       <Text style={{ marginBottom: 40 }}>
-        <a
+        <Link
           className="work-archieve-link"
-          href="/"
+          to={"/archieve"}
           style={{
             color: myMintGreen,
             fontSize: 14,
@@ -92,7 +93,7 @@ export default function OtherProjects() {
           }}
         >
           {"view the archive"}
-        </a>
+        </Link>
       </Text>
 
       <Grid

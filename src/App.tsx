@@ -1,6 +1,13 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+
+import ErrorPage from "./error-page";
+import reportWebVitals from "./reportWebVitals";
+import Root from "./routes/root";
+import Contactexample from "./routes/contactexample";
 
 import logo from "./logo.svg";
 import "./App.css";
@@ -13,6 +20,36 @@ import Work from "./components/Work";
 import About from "./components/About";
 import Home from "./components/Home";
 import Social from "./components/Social";
+import Archieve from "./components/Archieve";
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: (
+        <div style={{ paddingLeft: 45, paddingRight: 45 }}>
+          <Home />
+          <About />
+          {/* <Education /> */}
+          <Experience />
+          <Work />
+          <Contact />
+          <Footer />
+        </div>
+      ),
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "contacts/:contactId",
+      element: <Contactexample />,
+    },
+    {
+      path: "/archieve",
+      element: <Archieve />,
+    },
+  ],
+  { basename: process.env.PUBLIC_URL }
+);
 
 function App() {
   return (
@@ -38,15 +75,7 @@ function App() {
           <Social />
         </Grid>
         <Grid item xs={10}>
-          <div style={{ paddingLeft: 45, paddingRight: 45 }}>
-            <Home />
-            <About />
-            {/* <Education /> */}
-            <Experience />
-            <Work />
-            <Contact />
-            <Footer />
-          </div>
+          <RouterProvider router={router} />
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
