@@ -5,7 +5,7 @@ import { myTextGrey, myMilkYellow } from "../MyLibrary/MyColors";
 
 export default function SmithChart() {
   return (
-    <div style={{ paddingTop: 150, marginLeft: 10, marginRight: 10 }}>
+    <div className="project-page">
       <BackButton />
       <h1 style={{ color: myMilkYellow, marginTop: 30, marginBottom: 30 }}>
         Smith Chart Tool

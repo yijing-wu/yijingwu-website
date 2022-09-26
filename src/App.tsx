@@ -23,6 +23,7 @@ import Social from "./components/Social";
 import Archieve from "./components/Archieve";
 
 import SmithChart from "./projectPages/SmithChart";
+import CameraCalibration from "./projectPages/CameraCalibration";
 
 const router = createBrowserRouter(
   [
@@ -52,6 +53,10 @@ const router = createBrowserRouter(
     {
       path: "/smithchart",
       element: <SmithChart />,
+    },
+    {
+      path: "/cameracalibration",
+      element: <CameraCalibration />,
     },
   ],
   { basename: process.env.PUBLIC_URL }

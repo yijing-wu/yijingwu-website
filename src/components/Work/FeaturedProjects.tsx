@@ -16,7 +16,6 @@ export default function FeaturedProjects() {
         </div>
       ),
       tools: ["VS", "Code", "NPM", "XCode", "Java"],
-      mainLink: "/",
       externalLink: "/",
       githubLink: "/",
       buttonLink: "/",
@@ -33,8 +32,9 @@ export default function FeaturedProjects() {
       picture: CameraCalibrationProfile,
       title: "Camera Calibration",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Felis bibendum ut tristique et.",
-      tools: ["VS", "Code", "NPM", "XCode", "Java"],
+        "Research about the camera calibration and distortion correction algorithm for self-driving vehicles",
+      tools: ["Python", "C", "OpenCV", "Anaconda"],
+      buttonLink: "/cameracalibration",
     },
   ];
 
