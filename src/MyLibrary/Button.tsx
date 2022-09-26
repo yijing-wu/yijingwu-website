@@ -15,7 +15,7 @@ export interface ButtonProps {
 
 export default function Button({
   content,
-  buttonPrimaryColor,
+  buttonPrimaryColor = myMintGreen,
   link,
   fontSize = 14,
   onClick,
@@ -23,7 +23,7 @@ export default function Button({
   const buttonTheme = createTheme({
     palette: {
       primary: {
-        main: myMintGreen,
+        main: buttonPrimaryColor,
       },
       secondary: {
         main: "#000000",
@@ -39,7 +39,7 @@ export default function Button({
         href={link}
         style={{
           fontFamily: "SFMono-Regular",
-          fontSize: fontSize,
+          fontSize: 14,
         }}
       >
         {content}

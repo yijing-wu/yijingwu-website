@@ -8,28 +8,53 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-import { myMilkYellow, myMintGreen, myNavy } from "../MyLibrary/MyColors";
-import { Text } from "../MyLibrary";
+import {
+  myLightNavy,
+  myMilkYellow,
+  myMintGreen,
+  myNavy,
+  myTextGrey,
+} from "../MyLibrary/MyColors";
+import { Links, Text } from "../MyLibrary";
 
-function createData(
-  name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
-) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+const archievedProjects = [
+  {
+    year: "2021",
+    title: "Camera Calibration1",
+    location: "Frozen yoghurt",
+    tools: ["VS", "Code", "NPM", "XCode", "Java"],
+    externalLink: "externalLink",
+    githubLink: "/",
+    buttonLink: "/",
+  },
+  {
+    year: "2021",
+    title: "Camera Calibration2",
+    location: "Frozen yoghurt",
+    tools: [
+      "VS",
+      "Code",
+      "NPM",
+      "XCode",
+      "Java",
+      "Code",
+      "NPM",
+      "XCode",
+      "Java",
+    ],
+    // externalLink: "/",
+    githubLink: "/",
+    buttonLink: "/",
+  },
 ];
 
 export default function Archieve() {
+  const tableHeadStyles = {
+    fontSize: 22,
+    fontFamily: "Calibre-Semibold",
+    color: myTextGrey,
+  };
+
   return (
     <div
       style={{
@@ -61,26 +86,104 @@ export default function Archieve() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell align="left">Year</TableCell>
-              <TableCell align="left">Title</TableCell>
-              <TableCell align="left">Made at</TableCell>
-              <TableCell align="left">Built with</TableCell>
-              <TableCell align="left">Link</TableCell>
+              <TableCell align="left" style={{ border: 0 }}>
+                <Text style={tableHeadStyles}>Year</Text>
+              </TableCell>
+              <TableCell align="left" style={{ border: 0 }}>
+                <Text style={tableHeadStyles}>Title</Text>
+              </TableCell>
+              <TableCell align="left" style={{ border: 0 }}>
+                <Text style={tableHeadStyles}>Made at</Text>
+              </TableCell>
+              <TableCell align="left" style={{ border: 0 }}>
+                <Text style={tableHeadStyles}>Built with</Text>
+              </TableCell>
+              <TableCell align="left" style={{ border: 0 }}>
+                <Text style={tableHeadStyles}>Link</Text>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {archievedProjects.map((project) => (
               <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                key={project.title}
+                sx={{
+                  "&:last-child td, &:last-child th": { border: 0 },
+                  "&.MuiTableRow-hover": {
+                    "&:hover": {
+                      backgroundColor: myLightNavy,
+                    },
+                  },
+                }}
+                hover
+                style={{
+                  padding: 0,
+                  verticalAlign: "center",
+                }}
               >
-                <TableCell component="th" scope="row">
-                  {row.name}
+                <TableCell style={{ border: 0 }}>
+                  <Text
+                    style={{
+                      fontSize: 15,
+                      fontFamily: "SFMono-Medium",
+                      color: myMintGreen,
+                      paddingBottom: 5,
+                    }}
+                  >
+                    {project.year}
+                  </Text>
                 </TableCell>
-                <TableCell align="left">{row.calories}</TableCell>
-                <TableCell align="left">{row.fat}</TableCell>
-                <TableCell align="left">{row.carbs}</TableCell>
-                <TableCell align="left">{row.protein}</TableCell>
+                <TableCell style={{ border: 0 }}>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                    }}
+                  >
+                    {project.title}
+                  </Text>
+                </TableCell>
+                <TableCell align="left" style={{ border: 0 }}>
+                  <Text style={{ fontSize: 18, color: myTextGrey }}>
+                    {project.location}
+                  </Text>
+                </TableCell>
+                <TableCell align="left" style={{ border: 0 }}>
+                  <ul
+                    style={{
+                      fontFamily: "SFMono-Regular",
+                      fontSize: 13,
+                      color: myTextGrey,
+                      listStyle: "none",
+                      padding: 0,
+                      margin: 0,
+                    }}
+                  >
+                    {project.tools.map((tool, index) => {
+                      return (
+                        <li
+                          key={index}
+                          style={{
+                            display: "inline",
+                            marginRight: 10,
+                            float: "left",
+                          }}
+                        >
+                          {tool}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </TableCell>
+                <TableCell align="left" style={{ border: 0 }}>
+                  <Links
+                    rightAlign={false}
+                    buttonColor={myTextGrey}
+                    marginWidth={15}
+                    buttonHoverColor={myMintGreen}
+                    githubLink={project.githubLink}
+                    externalLink={project.externalLink}
+                  />
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
