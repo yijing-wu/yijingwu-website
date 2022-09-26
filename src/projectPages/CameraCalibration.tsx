@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 
@@ -21,6 +21,10 @@ import {
 } from "../assets/projects/cameraCalibration";
 
 export default function CameraCalibration() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="project-page">
       <BackButton />

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import { BackButton, Text } from "../MyLibrary";
 import { myTextGrey, myMilkYellow } from "../MyLibrary/MyColors";
 
 export default function SmithChart() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="project-page">
       <BackButton />
