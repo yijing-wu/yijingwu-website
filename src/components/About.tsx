@@ -24,12 +24,13 @@ export default function About() {
           <div
             style={{
               paddingTop: 10,
-              marginRight: 50,
+              marginRight: 30,
             }}
           >
-            {myAboutMe.map((paragraph) => {
+            {myAboutMe.map((paragraph, index) => {
               return (
                 <Text
+                  key={index}
                   style={{ fontSize: 20, color: myTextGrey, marginTop: 10 }}
                 >
                   {paragraph}
@@ -99,6 +100,7 @@ export default function About() {
                 width: 300,
                 overflow: "hidden",
                 borderRadius: "10%",
+                marginLeft: 50,
               }}
               alt="ProfilePhoto"
             />
