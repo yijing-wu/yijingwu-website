@@ -110,6 +110,8 @@ function Experience() {
                   <a
                     className="underline-animation"
                     href={jobsData[selected].link}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {jobsData[selected].company}
                   </a>

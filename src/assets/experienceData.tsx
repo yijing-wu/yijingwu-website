@@ -19,6 +19,7 @@ const jobsData = [
         Worked as a full-stack engineer to build and improve Upduo's web/mobile
         app via React, React Native and Django
       </div>,
+      <div>To be continue...</div>,
     ],
   },
   {

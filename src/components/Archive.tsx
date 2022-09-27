@@ -156,7 +156,10 @@ export default function Archive() {
                     })}
                   </ul>
                 </TableCell>
-                <TableCell align="left" style={{ border: 0 }}>
+                <TableCell
+                  align="left"
+                  style={{ border: 0, display: "flex", flexDirection: "row" }}
+                >
                   <Links
                     rightAlign={false}
                     buttonColor={myTextGrey}
@@ -164,6 +167,7 @@ export default function Archive() {
                     marginWidth={10}
                     buttonHoverColor={myMintGreen}
                     mainLink={project.mainLink}
+                    isMainLinkExternal={project.isMainLinkExternal}
                     githubLink={project.githubLink}
                   />
                 </TableCell>

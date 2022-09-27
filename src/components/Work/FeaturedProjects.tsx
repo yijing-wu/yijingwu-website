@@ -5,7 +5,7 @@ import FeaturedProjectWidget from "./FeaturedProjectWidget";
 
 export default function FeaturedProjects() {
   return (
-    <div style={{}}>
+    <div>
       {FeaturedProjectsData.map((featuredProject, index) => {
         return (
           <FeaturedProjectWidget
@@ -16,6 +16,7 @@ export default function FeaturedProjects() {
             description={featuredProject.description}
             tools={featuredProject.tools}
             mainLink={featuredProject.mainLink}
+            isMainLinkExternal={featuredProject.isMainLinkExternal}
             githubLink={featuredProject.githubLink}
           />
         );

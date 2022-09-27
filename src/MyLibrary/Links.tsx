@@ -13,6 +13,7 @@ export interface LinksProps {
   marginWidth?: number;
   buttonHoverColor?: string;
   mainLink?: string;
+  isMainLinkExternal?: boolean;
   githubLink?: string;
 }
 
@@ -23,6 +24,7 @@ export default function Links({
   marginWidth = 15,
   buttonHoverColor = myMintGreen,
   mainLink,
+  isMainLinkExternal = false,
   githubLink,
   ...rest
 }: LinksProps) {
@@ -31,8 +33,10 @@ export default function Links({
   return (
     <>
       {githubLink ? (
-        <Link
-          to={githubLink}
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
           style={{
             color:
               linkMouseFocused === "github" ? buttonHoverColor : buttonColor,
@@ -47,26 +51,52 @@ export default function Links({
           }}
         >
           <GitHubIcon style={{ fontSize: iconSize }} />
-        </Link>
+        </a>
       ) : null}
       {mainLink ? (
-        <Link
-          to={mainLink}
-          style={{
-            color:
-              linkMouseFocused === "external" ? buttonHoverColor : buttonColor,
-            marginLeft: rightAlign ? marginWidth : 0,
-            marginRight: rightAlign ? 0 : marginWidth,
-          }}
-          onMouseEnter={() => {
-            setLinkMouseFocused("external");
-          }}
-          onMouseLeave={() => {
-            setLinkMouseFocused("none");
-          }}
-        >
-          <OpenInNewIcon style={{ fontSize: iconSize }} />
-        </Link>
+        isMainLinkExternal ? (
+          <a
+            href={mainLink}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color:
+                linkMouseFocused === "external"
+                  ? buttonHoverColor
+                  : buttonColor,
+              marginLeft: rightAlign ? marginWidth : 0,
+              marginRight: rightAlign ? 0 : marginWidth,
+            }}
+            onMouseEnter={() => {
+              setLinkMouseFocused("external");
+            }}
+            onMouseLeave={() => {
+              setLinkMouseFocused("none");
+            }}
+          >
+            <OpenInNewIcon style={{ fontSize: iconSize }} />
+          </a>
+        ) : (
+          <Link
+            to={mainLink}
+            style={{
+              color:
+                linkMouseFocused === "external"
+                  ? buttonHoverColor
+                  : buttonColor,
+              marginLeft: rightAlign ? marginWidth : 0,
+              marginRight: rightAlign ? 0 : marginWidth,
+            }}
+            onMouseEnter={() => {
+              setLinkMouseFocused("external");
+            }}
+            onMouseLeave={() => {
+              setLinkMouseFocused("none");
+            }}
+          >
+            <OpenInNewIcon style={{ fontSize: iconSize }} />
+          </Link>
+        )
       ) : null}
     </>
   );
