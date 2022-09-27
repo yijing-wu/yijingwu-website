@@ -25,7 +25,7 @@
 }
 
 #about .skills-list li::before {
-  content: "▹";
+  content: "◇";
   line-height: 10px;
   color: #c2ded1d2; /* myMintGreen */
 }
@@ -36,7 +36,7 @@
 }
 
 #experience .duty:before {
-  content: "▹";
+  content: "◇";
   line-height: 15px;
   color: #c2ded1d2; /* myMintGreen with Alpha*/
   margin-right: 10px;

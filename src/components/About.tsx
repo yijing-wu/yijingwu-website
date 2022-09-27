@@ -51,7 +51,7 @@ export default function About() {
                       color: myMintGreenC0Alpha,
                     }}
                   >
-                    <div style={{ marginRight: 10 }}>-</div>
+                    <div style={{ marginRight: 10 }}>◇</div>
                     <div>
                       <div style={{ paddingBottom: 3 }}>{education.school}</div>
                       <div style={{ color: myTextGrey, paddingBottom: 8 }}>
