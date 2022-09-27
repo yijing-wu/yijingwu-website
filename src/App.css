@@ -42,6 +42,11 @@
   margin-right: 10px;
 }
 
+/* Work */
+#work .card {
+  transition: linear 0.1s;
+}
+
 /* Social */
 .social-list::after {
   content: "";
