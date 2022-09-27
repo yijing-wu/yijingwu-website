@@ -92,15 +92,17 @@ export default function About() {
           </div>
         </Grid>
         <Grid item xs={5}>
-          <img
-            src={ProfilePhoto}
-            style={{
-              width: 300,
-              overflow: "hidden",
-              borderRadius: "10%",
-            }}
-            alt="ProfilePhoto"
-          />
+          <div style={{ textAlign: "center" }}>
+            <img
+              src={ProfilePhoto}
+              style={{
+                width: 300,
+                overflow: "hidden",
+                borderRadius: "10%",
+              }}
+              alt="ProfilePhoto"
+            />
+          </div>
         </Grid>
       </Grid>
     </div>

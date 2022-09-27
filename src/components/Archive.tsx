@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -19,6 +19,10 @@ import { Links, Text } from "../MyLibrary";
 import { ArchivedProjectsData } from "../assets/projectsData";
 
 export default function Archive() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const tableHeadStyles = {
     fontSize: 22,
     fontFamily: "Calibre-Semibold",

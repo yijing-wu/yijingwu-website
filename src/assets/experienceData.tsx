@@ -13,6 +13,7 @@ const jobsData = [
     title: "Software Engineer Co-op",
     time: "June 2022 - December 2022",
     location: "United States",
+    link: "https://www.upduo.com/",
     duties: [
       <div>
         Worked as a full-stack engineer to build and improve Upduo's web/mobile
@@ -26,6 +27,7 @@ const jobsData = [
     title: "Algorithm Engineer Intern",
     time: "July 2020 - September 2020",
     location: "Shanghai",
+    link: "https://www.huawei.com/en/corporate-information",
     duties: [
       <div>
         Applied calibration and distortion correction algorithm to process video
@@ -49,6 +51,7 @@ const jobsData = [
     title: "Research Assistant",
     time: "September 2019 - June 2021",
     location: "Tongji University, Shanghai",
+    link: "",
     duties: [
       <div>
         Constructed classification models of brain during working memory
@@ -76,6 +79,7 @@ const jobsData = [
     title: "Research Assistant",
     time: "April 2019 - June 2021",
     location: "Tongji University, Shanghai",
+    link: "",
     duties: [
       <div>
         Built a Barrier-Free Positioning and Navigation System for people with

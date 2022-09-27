@@ -1,6 +1,6 @@
 /* NavBar */
 .navbar-item {
-  color: #ece5c770; /* myMilkYellow + Alpha */
+  color: #9a9a9a; /* myTextGrey */
 }
 
 .navbar-item:hover,
@@ -42,36 +42,6 @@
   margin-right: 10px;
 }
 
-/* Work */
-/* work-archive-link Fade in animation */
-#work .work-archive-link {
-  position: relative;
-  color: #c2ded1; /* myMintGreen */
-  text-decoration: none;
-}
-
-#work .work-archive-link:hover {
-  color: #c2ded1; /* myMintGreen */
-}
-
-#work .work-archive-link::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #c2ded1; /* myMintGreen */
-  transform: scaleX(0);
-  transform-origin: top left;
-  transition: transform 0.3s ease;
-}
-
-#work .work-archive-link:hover::before {
-  transform: scaleX(1);
-}
-
 /* Social */
 .social-list::after {
   content: "";
@@ -79,7 +49,7 @@
   width: 1px;
   height: 90px;
   margin: 0 auto;
-  background-color: #ece5c770; /* myMilkYellow */
+  background-color: #9a9a9a; /* myTextGrey */
 }
 
 .social-list li:hover,
@@ -88,7 +58,7 @@
 }
 
 .social-list a {
-  color: #ece5c770; /* myMilkYellow */
+  color: #9a9a9a; /* myTextGrey */
 }
 
 .social-list a:hover,
@@ -113,4 +83,33 @@
   font-style: italic;
   margin-bottom: 12px;
   margin-top: -5px;
+}
+
+/* Underline Slide in Animation */
+.underline-animation {
+  position: relative;
+  color: #c2ded1; /* myMintGreen */
+  text-decoration: none;
+}
+
+.underline-animation:hover {
+  color: #c2ded1; /* myMintGreen */
+}
+
+.underline-animation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #c2ded1; /* myMintGreen */
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.underline-animation:hover::before {
+  transform: scaleX(1);
 }

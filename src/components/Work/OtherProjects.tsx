@@ -29,7 +29,7 @@ export default function OtherProjects() {
 
       <Text style={{ marginBottom: 40 }}>
         <Link
-          className="work-archive-link"
+          className="underline-animation"
           to={"/archive"}
           style={{
             color: myMintGreen,

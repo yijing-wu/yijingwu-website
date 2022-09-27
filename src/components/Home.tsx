@@ -38,7 +38,7 @@ function Home() {
       >
         {"I write Code."}
       </Text>
-      <div style={{ width: "60%", marginBottom: 30 }}>
+      <div style={{ width: "65%", marginBottom: 30 }}>
         <Text style={{ fontSize: 22, color: myTextGrey, lineHeight: 1.3 }}>
           {myBriefIntro}
         </Text>

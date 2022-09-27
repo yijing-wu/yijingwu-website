@@ -38,6 +38,7 @@ function Experience() {
                 height: 40,
                 top: 40 * selected,
                 backgroundColor: myMintGreen,
+                borderRadius: 6,
               }}
             />
             <div style={{ marginRight: 20 }}>
@@ -104,7 +105,17 @@ function Experience() {
                   color: myMintGreen,
                 }}
               >
-                {`@ ${jobsData[selected].company}`}
+                {`@ `}
+                {jobsData[selected].link ? (
+                  <a
+                    className="underline-animation"
+                    href={jobsData[selected].link}
+                  >
+                    {jobsData[selected].company}
+                  </a>
+                ) : (
+                  `${jobsData[selected].company}`
+                )}
               </Text>
             </div>
             <Text
