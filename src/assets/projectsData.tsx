@@ -71,7 +71,7 @@ const smithChart = {
 // export components
 const FeaturedProjectsData = [cameraCalibration, eeg];
 const OtherProjectsData = [smithChart];
-const ArchievedProjectsData = [cameraCalibration, smithChart, eeg];
+const ArchivedProjectsData = [cameraCalibration, smithChart, eeg];
 
 // const FeaturedProjectsData = [
 //   {
@@ -201,4 +201,4 @@ const ArchievedProjectsData = [cameraCalibration, smithChart, eeg];
 //   },
 // ];
 
-export { FeaturedProjectsData, OtherProjectsData, ArchievedProjectsData };
+export { FeaturedProjectsData, OtherProjectsData, ArchivedProjectsData };

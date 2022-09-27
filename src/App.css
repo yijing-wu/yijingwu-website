@@ -43,18 +43,18 @@
 }
 
 /* Work */
-/* work-archieve-link Fade in animation */
-#work .work-archieve-link {
+/* work-archive-link Fade in animation */
+#work .work-archive-link {
   position: relative;
   color: #c2ded1; /* myMintGreen */
   text-decoration: none;
 }
 
-#work .work-archieve-link:hover {
+#work .work-archive-link:hover {
   color: #c2ded1; /* myMintGreen */
 }
 
-#work .work-archieve-link::before {
+#work .work-archive-link::before {
   content: "";
   position: absolute;
   display: block;
@@ -68,7 +68,7 @@
   transition: transform 0.3s ease;
 }
 
-#work .work-archieve-link:hover::before {
+#work .work-archive-link:hover::before {
   transform: scaleX(1);
 }
 

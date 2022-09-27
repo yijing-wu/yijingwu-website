@@ -29,8 +29,8 @@ export default function OtherProjects() {
 
       <Text style={{ marginBottom: 40 }}>
         <Link
-          className="work-archieve-link"
-          to={"/archieve"}
+          className="work-archive-link"
+          to={"/archive"}
           style={{
             color: myMintGreen,
             fontSize: 14,

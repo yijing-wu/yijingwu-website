@@ -16,9 +16,9 @@ import {
   myTextGrey,
 } from "../MyLibrary/MyColors";
 import { Links, Text } from "../MyLibrary";
-import { ArchievedProjectsData } from "../assets/projectsData";
+import { ArchivedProjectsData } from "../assets/projectsData";
 
-export default function Archieve() {
+export default function Archive() {
   const tableHeadStyles = {
     fontSize: 22,
     fontFamily: "Calibre-Semibold",
@@ -41,7 +41,7 @@ export default function Archieve() {
           color: myMilkYellow,
         }}
       >
-        {"Archieve"}
+        {"Archive"}
       </Text>
       <Text
         style={{
@@ -77,7 +77,7 @@ export default function Archieve() {
           </TableHead>
           <TableBody>
             {/* ordered by year */}
-            {ArchievedProjectsData.sort((a, b) => {
+            {ArchivedProjectsData.sort((a, b) => {
               return b.year - a.year;
             }).map((project) => (
               <TableRow

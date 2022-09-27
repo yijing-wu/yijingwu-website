@@ -14,7 +14,7 @@ import Work from "./components/Work";
 import About from "./components/About";
 import Home from "./components/Home";
 import Social from "./components/Social";
-import Archieve from "./components/Archieve";
+import Archive from "./components/Archive";
 
 import SmithChart from "./projectPages/SmithChart";
 import CameraCalibration from "./projectPages/CameraCalibration";
@@ -35,8 +35,8 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
     },
     {
-      path: "/archieve",
-      element: <Archieve />,
+      path: "/archive",
+      element: <Archive />,
     },
     // projects
     {
