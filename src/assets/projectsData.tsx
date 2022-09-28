@@ -127,6 +127,8 @@ const heartDiseaseAnalysis = {
       feature importance analysis on a 400k adult samples{" "}
       <a
         className="underline-animation"
+        target="_blank"
+        rel="noreferrer"
         href="https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease"
       >
         dataset
