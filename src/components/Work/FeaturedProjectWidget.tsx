@@ -94,6 +94,7 @@ function FeaturedProjectDetails({
               padding: 20,
               color: myTextGrey,
               fontSize: 18,
+              textAlign: "left",
             }}
           >
             {description}
