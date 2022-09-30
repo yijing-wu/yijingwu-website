@@ -11,13 +11,14 @@ const jobsData = [
     company: "Upduo",
     abbreviation: "Upduo",
     title: "Software Engineer Co-op",
-    time: "June 2022 - December 2022",
+    time: "June 2022 - Present",
     location: "United States",
     link: "https://www.upduo.com/",
     duties: [
       <div>
         Worked as a full-stack engineer to build and improve Upduo's web/mobile
-        app via React, React Native and Django
+        app via <div style={highlightStyle}>{` React, React Native `}</div>and
+        <div style={highlightStyle}>{` Django`}</div>
       </div>,
       <div>To be continue...</div>,
     ],
@@ -41,7 +42,8 @@ const jobsData = [
       </div>,
       <div>
         Increased processing efficiency of DSP by developing mapping table and
-        video processing algorithms for digital signal processors based on
+        video processing algorithms for digital signal processors with
+        <div style={highlightStyle}>{` C`}</div> based on
         <div style={highlightStyle}>{` OpenCV`}</div>
       </div>,
     ],

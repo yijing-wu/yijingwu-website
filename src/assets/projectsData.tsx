@@ -197,6 +197,30 @@ const rubikCubeHelper = {
   githubLink: "",
 };
 
+const santoriniGame = {
+  title: "Santorini",
+  picture: null,
+  year: 2022,
+  location: "-",
+  description: (
+    <>
+      <div>
+        A strategy-based board game playable with 2 or 3 players, developed in{" "}
+        <strong>Java</strong>.
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        Players need to choose their God Card, build towers on the battlefield
+        and climb the 3rd level before their enemies even notice it.
+      </div>
+    </>
+  ),
+  tools: ["Java", "Maven"],
+  mainLink: "",
+  isMainLinkExternal: false,
+  githubLink: "",
+};
+
 const smithChart = {
   title: "Smith Chart Tool",
   picture: SmithChartProfile,
@@ -220,6 +244,7 @@ const FeaturedProjectsData = [
 ];
 const OtherProjectsData = [
   personalWebsiteV2,
+  santoriniGame,
   smithChart,
   borderlandsVRGame,
   heartDiseaseAnalysis,
@@ -236,6 +261,7 @@ const ArchivedProjectsData = [
   heartDiseaseAnalysis,
   personalWebsiteV2,
   rubikCubeHelper,
+  santoriniGame,
   smithChart,
 ];
 
