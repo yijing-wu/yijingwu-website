@@ -97,16 +97,8 @@
   text-decoration: none;
 }
 
-.underline-animation-grey {
-  color: #9a9a9a; /* myTextGrey */
-}
-
 .underline-animation:hover {
   color: #c2ded1; /* myMintGreen */
-}
-
-.underline-animation-grey:hover {
-  color: #9a9a9a; /* myTextGrey */
 }
 
 .underline-animation::before {
@@ -121,10 +113,6 @@
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
-}
-
-.underline-animation-grey::before {
-  background-color: #9a9a9a; /* myTextGrey */
 }
 
 .underline-animation:hover::before {

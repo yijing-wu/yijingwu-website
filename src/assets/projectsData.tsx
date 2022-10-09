@@ -1,4 +1,5 @@
 // image import
+import { highlightStyle } from "../MyLibrary/MyStyles";
 import CameraCalibrationProfile from "./projects/camera-calibration.png";
 import CircleDjangoProfile from "./projects/circle.png";
 import CourseSelectionProfile from "./projects/courseSelection.png";
@@ -18,18 +19,20 @@ const aquaGolffCollectionRobot = {
   description: (
     <>
       <div>
-        - A robot programmed with <strong>Raspberry Pi</strong>, which is able
-        to locate, recognize and collect aqua golf in water automatically.
+        - A robot programmed with <div style={highlightStyle}>Raspberry Pi</div>
+        , which is able to locate, recognize and collect aqua golf in water
+        automatically.
       </div>
       <div style={{ height: 4 }} />
       <div>
-        - The robot arm is designed and manufactured via Fusion360 and 3D
-        printer.
+        - The robot arm is designed and manufactured via Fusion360,{" "}
+        <div style={highlightStyle}>3D modeling</div> and{" "}
+        <div style={highlightStyle}>3D printer</div>
       </div>
       <div style={{ height: 4 }} />
       <div>
         - Performed image processing, conducted golf positioning and recognition
-        through image HSB using OpenCV
+        through image HSB using <div style={highlightStyle}>OpenCV</div>
       </div>
     </>
   ),
@@ -46,8 +49,10 @@ const borderlandsVRGame = {
   location: "Shanghai Jiao Tong University",
   description: (
     <div>
-      A VR FPS (First Person Shooter) game on HTC Vive headset via Unity 3D,
-      Maya.
+      A <div style={highlightStyle}>VR</div> FPS (First Person Shooter) game on
+      HTC Vive headset via <div style={highlightStyle}>Unity 3D</div>
+      {", "}
+      <div style={highlightStyle}>Maya</div> .
     </div>
   ),
   tools: ["Unity", "C#", "Maya", "VR"],
@@ -70,7 +75,9 @@ const cameraCalibration = {
       <div style={{ height: 4 }} />
       <div>
         - Developed mapping table and video processing algorithms for digital
-        signal processors based on OpenCV with <strong>C</strong>.
+        signal processors based on{" "}
+        <div style={highlightStyle}>{` OpenCV `}</div> with{" "}
+        <div style={highlightStyle}>{` C `}</div>.
       </div>
     </>
   ),
@@ -94,25 +101,25 @@ const circleDjango = {
       </div>
       <div style={{ height: 4 }} />
       <div>
-        - Developed via <strong>Python Django</strong> with
-        <strong> PostgreSQL</strong> database
+        - Developed via <div style={highlightStyle}>Python Django</div> with
+        <div style={highlightStyle}> PostgreSQL</div> database
       </div>
       <div style={{ height: 4 }} />
       <div>
-        - Built
-        <strong> REST API </strong>
-        service through Django REST framework [
+        - Built{" "}
         <a
-          className="underline-animation underline-animation-grey"
+          className="underline-animation"
           href={"https://circle.up.railway.app/api/"}
           target="_blank"
           rel="noreferrer"
         >
-          link
-        </a>
-        ]
+          REST API service
+        </a>{" "}
+        through Django REST framework
       </div>
-      <div>- Mobile responsiveness design</div>
+      <div>
+        - Mobile <div style={highlightStyle}> responsiveness</div> design
+      </div>
       <div>- Deployed on Railway</div>
     </>
   ),
@@ -130,14 +137,16 @@ const courseSelectionSystem = {
   description: (
     <div>
       A course selection management system with separation of frontend and
-      backend based on <strong>Vue.js</strong>, <strong>Node.js</strong>,{" "}
-      <strong>Element-UI</strong> and <strong>MySQL</strong>.
+      backend based on <div style={highlightStyle}>Vue.js</div>,{" "}
+      <div style={highlightStyle}>Node.js</div>,{" "}
+      <div style={highlightStyle}>Element-UI</div> and{" "}
+      <div style={highlightStyle}>MySQL</div>.
     </div>
   ),
   tools: ["Vue.js", "Node.js", "MySQL", "ECharts", "Javascript"],
   mainLink: "",
   isMainLinkExternal: false,
-  githubLink: "",
+  githubLink: "https://github.com/yijing-wu/CourseSelectionSystem",
 };
 
 const intelligentCars = {
@@ -204,8 +213,9 @@ const personalWebsiteV2 = {
   location: "-",
   description: (
     <div>
-      Second version of my personal website, built with <strong>React</strong>{" "}
-      and hosted on <strong>GitHub Pages</strong>. This website!
+      Second version of my personal website, built with{" "}
+      <div style={highlightStyle}>React</div> and hosted on{" "}
+      <div style={highlightStyle}>GitHub Pages</div>. This website!
     </div>
   ),
   tools: ["React", "Typescript", "CSS"],
@@ -223,8 +233,8 @@ const rubikCubeHelper = {
     <>
       <div>
         - A dynamic and cross-browser compatible web application with{" "}
-        <strong>React</strong>, aiming to bring more personalized Rubik's Cube
-        experience
+        <div style={highlightStyle}>React</div>, aiming to bring more
+        personalized Rubik's Cube experience
       </div>
       <div style={{ height: 4 }} />
       <div>
@@ -248,7 +258,7 @@ const santoriniGame = {
     <>
       <div>
         A strategy-based board game playable with 2 or 3 players, developed in{" "}
-        <strong>Java</strong>.
+        <div style={highlightStyle}>Java</div>.
       </div>
       <div style={{ height: 4 }} />
       <div>

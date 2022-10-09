@@ -1,10 +1,4 @@
-import { myTextLightGrey } from "../MyLibrary/MyColors";
-
-const highlightStyle = {
-  display: "inline",
-  fontFamily: "Calibre-Medium",
-  color: myTextLightGrey,
-};
+import { highlightStyle } from "../MyLibrary/MyStyles";
 
 const jobsData = [
   {
@@ -59,7 +53,7 @@ const jobsData = [
       <div>
         Achieved reduction of distortion correction errors from 1.395 ± 0.136
         pixels to 0.055 ± 0.192 pixels through cylindrical projection and
-        single-point mapping
+        single-point mapping with <div style={highlightStyle}>{` Python `}</div>
       </div>,
       <div>
         Increased processing efficiency of DSP by developing mapping table and
@@ -80,7 +74,8 @@ const jobsData = [
       <div>
         Constructed classification models of brain during working memory
         maintenance based on 128-channel EEG dataset for material-specific
-        Sternberg task through feature selection and machine learning
+        Sternberg task through feature selection and machine learning with{" "}
+        <div style={highlightStyle}>{` Python `}</div>
       </div>,
       <div>
         Extracted features of EEG signals by empirical mode decomposition (EMD)
@@ -92,8 +87,9 @@ const jobsData = [
       </div>,
       <div>
         Accomplished improvement of classification performance from 71.45% to
-        91.82% under SVM and published the result in an IEEE paper as the first
-        author{" "}
+        91.82% under SVM and published the result in an
+        <div style={highlightStyle}>{` IEEE `}</div> paper as the{" "}
+        <div style={highlightStyle}>{` first author `}</div>
       </div>,
     ],
   },
@@ -107,14 +103,16 @@ const jobsData = [
     duties: [
       <div>
         Built a Barrier-Free Positioning and Navigation System for people with
-        disabilities by performing image segmentation via PyTorch for indoor map
-        construction as well as detecting obstacles based on the YoloV3
-        algorithm{" "}
+        disabilities by performing image segmentation via
+        <div style={highlightStyle}>{` PyTorch `}</div>
+        for indoor map construction as well as detecting obstacles based on the
+        <div style={highlightStyle}>{` YoloV3 `}</div> algorithm{" "}
       </div>,
       <div>
         Guided a four-person research team and participated in the development
-        of AR assisted module for indoor positioning and navigation system in
-        China International Import Expo (CIIE) in 2019 and 2020{" "}
+        of <div style={highlightStyle}>{` AR `}</div> assisted module for indoor
+        positioning and navigation system in China International Import Expo
+        (CIIE) in 2019 and 2020{" "}
       </div>,
     ],
   },
