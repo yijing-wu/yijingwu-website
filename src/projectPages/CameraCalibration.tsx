@@ -29,10 +29,54 @@ export default function CameraCalibration() {
     <div className="project-page">
       <BackButton />
       <Text style={{ fontSize: 20, color: myTextLightGrey }}>
+        <h1 style={{ color: myMilkYellow, marginTop: 30 }}>
+          Camera Calibration and Distortion Correction
+        </h1>
+        <div>
+          Fisheye camera is widely used in the self-driving vehicles fields due
+          to it can provide a bigger view. However, it brings image distortion
+          problems. So we need to find a proper way to solve this problem.
+        </div>
+        <ul>
+          <li style={{ marginBottom: 4 }}>
+            Through processed video flows of camera sensors for self-driving
+            vehicles with camera calibration and distortion correction
+            algorithms, we can mitigate the side effects.
+          </li>
+          <li style={{ marginBottom: 4 }}>
+            In addition, we achieved a reduction of distortion correction errors
+            from 1.395 ± 0.136 pixels to 0.055 ± 0.192 pixels through
+            cylindrical projection and single-point mapping with Python
+          </li>
+          <li style={{ marginBottom: 4 }}>
+            Based on these results, I developed a mapping table and video
+            processing algorithms for digital signal processors with C based on
+            OpenCV to increase the processing efficiency of DSP (Digital Signal
+            Processor).
+          </li>
+        </ul>
+        <div className="figure">
+          <img
+            src={IMGPhotoBeforeDistortionCorrection}
+            width="30%"
+            alt="Before distortion correction"
+          />
+          <div style={{ width: "5%", display: "inline-block" }} />
+          <img
+            src={IMGPhotoAfterDistortionCorrection}
+            width="30%"
+            alt="After distortion correction"
+          />
+          <div style={{ height: 10 }} />
+          <div className="figure-footnote">
+            An example of photo before/after distortion correction{" "}
+          </div>
+        </div>
+
+        <div style={{ height: 20 }} />
+        <hr />
+
         <MathJaxContext>
-          <h1 style={{ color: myMilkYellow, marginTop: 30 }}>
-            Camera Calibration and Distortion Correction
-          </h1>
           <span>The following topics are discussed in this article:</span>
           <ul>
             <li>

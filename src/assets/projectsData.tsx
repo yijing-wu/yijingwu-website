@@ -82,8 +82,7 @@ const cameraCalibration = {
     </>
   ),
   tools: ["Python", "C", "OpenCV", "Anaconda"],
-  // mainLink: "/cameracalibration",
-  mainLink: "",
+  mainLink: "/cameracalibration",
   isMainLinkExternal: false,
   githubLink: "",
 };
