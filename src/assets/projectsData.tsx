@@ -1,5 +1,6 @@
 // image import
 import CameraCalibrationProfile from "./projects/camera-calibration.png";
+import CircleDjangoProfile from "./projects/circle.png";
 import CourseSelectionProfile from "./projects/courseSelection.png";
 import EEGProfile from "./projects/eeg.png";
 import IntelligentCarsProfile from "./projects/intelligentCars.png";
@@ -78,6 +79,47 @@ const cameraCalibration = {
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
+};
+
+const circleDjango = {
+  title: "Circle",
+  picture: CircleDjangoProfile,
+  year: 2022,
+  location: "-",
+  description: (
+    <>
+      <div>
+        - A discord-like application that allows users to join community and
+        discuss easier
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Developed via <strong>Python Django</strong> with
+        <strong> PostgreSQL</strong> database
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Built
+        <strong> REST API </strong>
+        service through Django REST framework [
+        <a
+          className="underline-animation underline-animation-grey"
+          href={"https://circle.up.railway.app/api/"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          link
+        </a>
+        ]
+      </div>
+      <div>- Mobile responsiveness design</div>
+      <div>- Deployed on Railway</div>
+    </>
+  ),
+  tools: ["Django", "Python", "PostgreSQL", "JavaScript", "Railway"],
+  mainLink: "https://circle.up.railway.app/",
+  isMainLinkExternal: true,
+  githubLink: "https://github.com/yijing-wu/Circle",
 };
 
 const courseSelectionSystem = {
@@ -241,6 +283,7 @@ const FeaturedProjectsData = [
   eeg,
   rubikCubeHelper,
   courseSelectionSystem,
+  circleDjango,
 ];
 const OtherProjectsData = [
   personalWebsiteV2,
@@ -263,6 +306,7 @@ const ArchivedProjectsData = [
   rubikCubeHelper,
   santoriniGame,
   smithChart,
+  circleDjango,
 ];
 
 export { FeaturedProjectsData, OtherProjectsData, ArchivedProjectsData };

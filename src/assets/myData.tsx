@@ -33,10 +33,12 @@ const myEducationList = [
 const mySkillList = [
   "Java",
   "React",
-  "JavaScript/TypeScript",
+  "JavaScript",
   "React Native",
-  "Python",
+  "TypeScript",
   "Node.js",
+  "Python",
+  "Django",
 ];
 
 export { myName, myBriefIntro, myAboutMe, myEducationList, mySkillList };
