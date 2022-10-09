@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0eb7fca0.css",
-    "main.js": "/static/js/main.1897a4ac.js",
+    "main.js": "/static/js/main.e51352b6.js",
     "static/js/787.b53db9e9.chunk.js": "/static/js/787.b53db9e9.chunk.js",
     "static/media/simithChart.png": "/static/media/simithChart.f756a3dfc394ea472cd6.png",
     "static/media/ProfilePhoto.png": "/static/media/ProfilePhoto.7e5adaee377ccf56b425.png",
@@ -10,6 +10,7 @@
     "static/media/rubiks-cube.png": "/static/media/rubiks-cube.5d1d2b185652db7e9350.png",
     "static/media/courseSelection.png": "/static/media/courseSelection.756d8d4213dd9bdfda18.png",
     "static/media/camera-calibration.png": "/static/media/camera-calibration.5394c58abe4197d28843.png",
+    "static/media/circle.png": "/static/media/circle.c1c01956621442f2938f.png",
     "static/media/PhotoBeforeDistortionCorrection.png": "/static/media/PhotoBeforeDistortionCorrection.be111873e9ed913c762e.png",
     "static/media/PhotoAfterDistortionCorrection.png": "/static/media/PhotoAfterDistortionCorrection.71b5b3b6b33f3f60a1c0.png",
     "static/media/PinholeCameraModel.jpg": "/static/media/PinholeCameraModel.aea859376973ae652c6f.jpg",
@@ -51,11 +52,11 @@
     "static/media/CylindricalProjectionSideView.png": "/static/media/CylindricalProjectionSideView.4ab57074458ce00d5933.png",
     "index.html": "/index.html",
     "main.0eb7fca0.css.map": "/static/css/main.0eb7fca0.css.map",
-    "main.1897a4ac.js.map": "/static/js/main.1897a4ac.js.map",
+    "main.e51352b6.js.map": "/static/js/main.e51352b6.js.map",
     "787.b53db9e9.chunk.js.map": "/static/js/787.b53db9e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb7fca0.css",
-    "static/js/main.1897a4ac.js"
+    "static/js/main.e51352b6.js"
   ]
 }
