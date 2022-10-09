@@ -200,7 +200,7 @@ const eeg = {
   description:
     "Constructed classification models of brain during working memory maintenance based on 128-channel EEG dataset for material-specific Sternberg task through feature selection and machine learning",
   tools: ["Python", "Matlab", "EEG", "SVM", "RF", "Machine-learning"],
-  mainLink: "",
+  mainLink: "/eeg",
   isMainLinkExternal: false,
   githubLink: "",
 };

@@ -16,8 +16,7 @@ import Home from "./components/Home";
 import Social from "./components/Social";
 import Archive from "./components/Archive";
 
-import SmithChart from "./projectPages/SmithChart";
-import CameraCalibration from "./projectPages/CameraCalibration";
+import { CameraCalibration, EEG, SmithChart } from "./projectPages";
 
 const router = createBrowserRouter(
   [
@@ -46,6 +45,10 @@ const router = createBrowserRouter(
     {
       path: "/cameracalibration",
       element: <CameraCalibration />,
+    },
+    {
+      path: "/eeg",
+      element: <EEG />,
     },
   ],
   { basename: process.env.PUBLIC_URL }
