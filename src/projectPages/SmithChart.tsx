@@ -18,7 +18,8 @@ export default function SmithChart() {
       <Text style={{ fontSize: 20, color: myTextGrey, marginTop: 10 }}>
         <div>{smithChart.description}</div>
       </Text>
-      <div style={{ height: 20 }}></div>
+
+      <br />
 
       <div style={{ display: "flex" }}>
         <iframe

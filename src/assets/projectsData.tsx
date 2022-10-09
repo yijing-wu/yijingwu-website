@@ -161,7 +161,7 @@ const intelligentCars = {
     </div>
   ),
   tools: ["C", "Keil uVision"],
-  mainLink: "",
+  mainLink: "/intelligentcars",
   isMainLinkExternal: false,
   githubLink: "",
 };
@@ -292,13 +292,14 @@ const smithChart = {
 
 // export components
 const FeaturedProjectsData = [
+  circleDjango,
+  rubikCubeHelper,
   cameraCalibration,
   eeg,
-  rubikCubeHelper,
-  courseSelectionSystem,
-  circleDjango,
 ];
+
 const OtherProjectsData = [
+  courseSelectionSystem,
   personalWebsiteV2,
   santoriniGame,
   smithChart,
@@ -307,6 +308,7 @@ const OtherProjectsData = [
   intelligentCars,
   aquaGolffCollectionRobot,
 ];
+
 const ArchivedProjectsData = [
   aquaGolffCollectionRobot,
   borderlandsVRGame,

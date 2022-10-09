@@ -73,9 +73,9 @@ export default function CameraCalibration() {
           </div>
         </div>
 
-        <div style={{ height: 20 }} />
+        <br />
         <hr />
-
+        <br />
         <MathJaxContext>
           <span>The following topics are discussed in this article:</span>
           <ul>
@@ -676,7 +676,6 @@ export default function CameraCalibration() {
               <td>Binary file</td>
             </tr>
           </table>
-          (The End)
         </MathJaxContext>
       </Text>
     </div>

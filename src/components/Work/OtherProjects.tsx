@@ -50,7 +50,7 @@ export default function OtherProjects() {
       >
         {OtherProjectsData.slice(
           0,
-          onShowMore ? OtherProjectsData.length : 3
+          onShowMore ? OtherProjectsData.length : 6
         ).map((project, index) => {
           return <OtherProjectCard key={index} project={project} />;
         })}
