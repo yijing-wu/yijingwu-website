@@ -18,9 +18,30 @@ const jobsData = [
       <div>
         Worked as a full-stack engineer to build and improve Upduo's web/mobile
         app via <div style={highlightStyle}>{` React, React Native `}</div>and
-        <div style={highlightStyle}>{` Django`}</div>
+        <div style={highlightStyle}>{` Django`}</div> with
       </div>,
-      <div>To be continue...</div>,
+      <div>
+        Integrated iOS framework <div style={highlightStyle}>{` CallKit `}</div>
+        and Android <div style={highlightStyle}>{` ConnectionService `}</div>
+        via Callkeep and modified the native code with
+        <div style={highlightStyle}>{` Objective-C `}</div> and
+        <div style={highlightStyle}>{` Java `}</div> to realize a video call
+        notification feature
+      </div>,
+      <div>
+        Performed local camera and microphone selection and check features
+        through <div style={highlightStyle}>{` Agora `}</div> to ensure video
+        chat quality
+      </div>,
+      <div>
+        Collaborated with product and design team to conduct visual changes and
+        deliver new user interface, such as animation, time windows, data
+        visualization
+      </div>,
+      <div>
+        Implemented beta testing and unit tests to locate Upduo web/mobile app
+        issues
+      </div>,
     ],
   },
   {
