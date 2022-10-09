@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from "react";
+import { smithChart } from "../assets/projectsData";
 
 import { BackButton, Text } from "../MyLibrary";
 import { myTextGrey, myMilkYellow } from "../MyLibrary/MyColors";
@@ -13,6 +14,11 @@ export default function SmithChart() {
       <h1 style={{ color: myMilkYellow, marginTop: 30, marginBottom: 30 }}>
         Smith Chart Tool
       </h1>
+
+      <Text style={{ fontSize: 20, color: myTextGrey, marginTop: 10 }}>
+        <div>{smithChart.description}</div>
+      </Text>
+      <div style={{ height: 20 }}></div>
 
       <div style={{ display: "flex" }}>
         <iframe
@@ -39,9 +45,9 @@ export default function SmithChart() {
           circles and arcs can be drawn on the reflection coefficient complex
           plane. These circles and arcs represent the magnitude of impedance,
           admittance, standing wave ratio, etc. Their values can be easily and
-          intuitively readout within the unit circle of the reflection
+          intuitively read out within the unit circle of the reflection
           coefficients. It is an effective tool for selecting and calculating
-          matching impedance in high frequency and microwave circuit design.
+          matching impedance in high-frequency and microwave circuit design.
         </p>
       </Text>
     </div>

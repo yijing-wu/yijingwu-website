@@ -170,6 +170,7 @@ export default function Archive() {
                     isMainLinkExternal={project.isMainLinkExternal}
                     githubLink={project.githubLink}
                   />
+                  <div style={{ marginRight: 20 }}></div>
                 </TableCell>
               </TableRow>
             ))}

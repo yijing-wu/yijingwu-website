@@ -278,11 +278,15 @@ const smithChart = {
   picture: SmithChartProfile,
   year: 2019,
   location: "Tongji University",
-  description:
-    "A Matlab and Simulink based graphical calculator tool for radio frequency (RF) engineering.",
+  description: (
+    <div>
+      A <div style={highlightStyle}>Matlab</div> and{" "}
+      <div style={highlightStyle}>Simulink</div> based graphical calculator tool
+      for radio frequency (RF) engineering.
+    </div>
+  ),
   tools: ["Matlab", "Simulink"],
-  // mainLink: "/smithchart",
-  mainLink: "",
+  mainLink: "/smithchart",
   isMainLinkExternal: false,
   githubLink: "",
 };
@@ -308,6 +312,7 @@ const ArchivedProjectsData = [
   aquaGolffCollectionRobot,
   borderlandsVRGame,
   cameraCalibration,
+  circleDjango,
   courseSelectionSystem,
   eeg,
   intelligentCars,
@@ -316,7 +321,24 @@ const ArchivedProjectsData = [
   rubikCubeHelper,
   santoriniGame,
   smithChart,
-  circleDjango,
 ];
 
-export { FeaturedProjectsData, OtherProjectsData, ArchivedProjectsData };
+export {
+  // general info
+  FeaturedProjectsData,
+  OtherProjectsData,
+  ArchivedProjectsData,
+  // project details
+  aquaGolffCollectionRobot,
+  borderlandsVRGame,
+  cameraCalibration,
+  circleDjango,
+  courseSelectionSystem,
+  eeg,
+  intelligentCars,
+  heartDiseaseAnalysis,
+  personalWebsiteV2,
+  rubikCubeHelper,
+  santoriniGame,
+  smithChart,
+};
