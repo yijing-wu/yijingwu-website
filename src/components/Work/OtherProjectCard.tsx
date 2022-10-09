@@ -95,7 +95,10 @@ export default function OtherProjectCard({ project }: OtherProjectCardProps) {
         >
           {project.tools.map((tool: any, index: any) => {
             return (
-              <li key={index} style={{ display: "inline", marginRight: 10 }}>
+              <li
+                key={index}
+                style={{ display: "inline-block", marginRight: 10 }}
+              >
                 {tool}
               </li>
             );
