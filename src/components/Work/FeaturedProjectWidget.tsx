@@ -83,9 +83,8 @@ function FeaturedProjectDetails({
           style={{
             backgroundColor: myLightNavy,
             width: "120%",
-            height: 150,
             left: textRightAlign ? "-20%" : "0%",
-            position: "absolute",
+            position: "relative",
             borderRadius: 6,
           }}
         >
@@ -101,7 +100,7 @@ function FeaturedProjectDetails({
           </Text>
         </div>
       </div>
-      <div style={{ position: "relative", top: 150 }}>
+      <div style={{ position: "relative" }}>
         <ul
           style={{
             fontFamily: "SFMono-Regular",
