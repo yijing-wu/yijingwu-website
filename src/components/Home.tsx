@@ -7,6 +7,7 @@ import {
   myMintGreen,
 } from "../MyLibrary/MyColors";
 import { myName, myBriefIntro } from "../assets/myData";
+import { Link } from "@mui/material";
 
 function Home() {
   return (
@@ -43,7 +44,15 @@ function Home() {
           {myBriefIntro}
         </Text>
       </div>
-      <Button>
+      {/* Resume: updated on Oct 9th, 2022 */}
+      <Button
+        onClick={() => {
+          window.open(
+            "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
+            "_blank"
+          );
+        }}
+      >
         <div style={{ padding: 5, fontSize: 15 }}>{"RESUME"}</div>
       </Button>
     </div>
