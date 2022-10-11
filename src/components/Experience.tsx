@@ -118,6 +118,13 @@ function Experience() {
                     href={jobsData[selected].link}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => {
+                      GoogleAnalytics.logEvent(
+                        "click-companyweb-" + jobsData[selected].abbreviation,
+                        "company-website",
+                        "minor-button"
+                      );
+                    }}
                   >
                     {jobsData[selected].company}
                   </a>

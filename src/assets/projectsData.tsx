@@ -1,3 +1,5 @@
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
+
 // image import
 import { highlightStyle } from "../MyLibrary/MyStyles";
 import CameraCalibrationProfile from "./projects/camera-calibration.png";
@@ -115,6 +117,13 @@ const circleDjango = {
           href={"https://circle.up.railway.app/api/"}
           target="_blank"
           rel="noreferrer"
+          onClick={() => {
+            GoogleAnalytics.logEvent(
+              "click-circleDjango-RESTAPI",
+              "project-details",
+              "minor-button"
+            );
+          }}
         >
           REST API service
         </a>{" "}
@@ -187,6 +196,13 @@ const heartDiseaseAnalysis = {
         target="_blank"
         rel="noreferrer"
         href="https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease"
+        onClick={() => {
+          GoogleAnalytics.logEvent(
+            "click-heartDiseaseAnalysis-dataset",
+            "project-details",
+            "minor-button"
+          );
+        }}
       >
         dataset
       </a>{" "}
