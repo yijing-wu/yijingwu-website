@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
 import { Text, Title } from "../MyLibrary";
 import { myTextGrey, myMintGreen, myNavy } from "../MyLibrary/MyColors";
 import { jobsData } from "../assets/experienceData";
@@ -71,6 +72,11 @@ function Experience() {
                       }}
                       onClick={() => {
                         setSelected(index);
+                        GoogleAnalytics.logEvent(
+                          "click-experience-" + jobData.abbreviation,
+                          "experience",
+                          "button"
+                        );
                       }}
                       onMouseEnter={() => {
                         setMouseFocused(index);
