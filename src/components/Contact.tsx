@@ -1,5 +1,6 @@
 import React from "react";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
 import { Button, Text } from "../MyLibrary";
 import {
   myTextGrey,
@@ -50,7 +51,14 @@ function Contact() {
         Thank you for taking the time to view my personal website. Whether you
         have any questions or just want to say hi, feel free to contact me!
       </Text>
-      <Button link={"mailto:yijingwu.w@gmail.com"}>{"Say Hi"}</Button>
+      <Button
+        link={"mailto:yijingwu.w@gmail.com"}
+        onClick={() => {
+          GoogleAnalytics.logEvent("click-sayhi", "social", "button");
+        }}
+      >
+        {"Say Hi"}
+      </Button>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
 import { myMintGreen, myNavy } from "../MyLibrary/MyColors";
 import Logo from "../assets/Logo/Logo-pure.png";
 
@@ -70,6 +71,13 @@ export default function NavBar() {
                   textDecoration: "none",
                 }}
                 className="navbar-item"
+                onClick={() => {
+                  GoogleAnalytics.logEvent(
+                    "click-navbar-" + item.name,
+                    "navbar",
+                    "button"
+                  );
+                }}
               >
                 <span style={{ color: myMintGreen }}>{`0${index + 1}.`}</span>
                 {`${item.name}`}

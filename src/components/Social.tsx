@@ -4,6 +4,8 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
+
 function Social() {
   const itemStyle = {
     paddingBottom: 15,
@@ -23,7 +25,14 @@ function Social() {
       }}
     >
       <li style={itemStyle}>
-        <a href="https://github.com/yijing-wu" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/yijing-wu"
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => {
+            GoogleAnalytics.logEvent("click-github", "social", "button");
+          }}
+        >
           <GitHubIcon />
         </a>
       </li>
@@ -32,12 +41,20 @@ function Social() {
           href="https://www.linkedin.com/in/yijing-wu-/"
           target="_blank"
           rel="noreferrer"
+          onClick={() => {
+            GoogleAnalytics.logEvent("click-linkedin", "social", "button");
+          }}
         >
           <LinkedInIcon />
         </a>
       </li>
       <li style={itemStyle}>
-        <a href="mailto:yijingwu.w@gmail.com">
+        <a
+          href="mailto:yijingwu.w@gmail.com"
+          onClick={() => {
+            GoogleAnalytics.logEvent("click-email", "social", "button");
+          }}
+        >
           <MailOutlineIcon />
         </a>
       </li>

@@ -1,5 +1,6 @@
 import React from "react";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
 import { Button, Text } from "../MyLibrary";
 import {
   myTextGrey,
@@ -7,7 +8,6 @@ import {
   myMintGreen,
 } from "../MyLibrary/MyColors";
 import { myName, myBriefIntro } from "../assets/myData";
-import { Link } from "@mui/material";
 
 function Home() {
   return (
@@ -51,6 +51,7 @@ function Home() {
             "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
             "_blank"
           );
+          GoogleAnalytics.logEvent("click-resume", "click-resume", "button");
         }}
       >
         <div style={{ padding: 5, fontSize: 15 }}>{"RESUME"}</div>
