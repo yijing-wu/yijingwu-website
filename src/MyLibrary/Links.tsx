@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import * as GoogleAnalytics from "../config/GoogleAnalytics";
 import { myMintGreen, myTextGrey } from "./MyColors";
 
 export interface LinksProps {
@@ -12,6 +13,7 @@ export interface LinksProps {
   iconSize?: number;
   marginWidth?: number;
   buttonHoverColor?: string;
+  contentAbbreviation: string;
   mainLink?: string;
   isMainLinkExternal?: boolean;
   githubLink?: string;
@@ -23,6 +25,7 @@ export default function Links({
   iconSize = 24,
   marginWidth = 15,
   buttonHoverColor = myMintGreen,
+  contentAbbreviation,
   mainLink,
   isMainLinkExternal = false,
   githubLink,
@@ -49,6 +52,13 @@ export default function Links({
           onMouseLeave={() => {
             setLinkMouseFocused("none");
           }}
+          onClick={() => {
+            GoogleAnalytics.logEvent(
+              "click-githubLink-of-" + contentAbbreviation,
+              "project",
+              "button"
+            );
+          }}
         >
           <GitHubIcon style={{ fontSize: iconSize }} />
         </a>
@@ -73,6 +83,13 @@ export default function Links({
             onMouseLeave={() => {
               setLinkMouseFocused("none");
             }}
+            onClick={() => {
+              GoogleAnalytics.logEvent(
+                "click-mainLink-of-" + contentAbbreviation,
+                "project",
+                "button"
+              );
+            }}
           >
             <OpenInNewIcon style={{ fontSize: iconSize }} />
           </a>
@@ -92,6 +109,13 @@ export default function Links({
             }}
             onMouseLeave={() => {
               setLinkMouseFocused("none");
+            }}
+            onClick={() => {
+              GoogleAnalytics.logEvent(
+                "click-mainLink-of-" + contentAbbreviation,
+                "project",
+                "button"
+              );
             }}
           >
             <OpenInNewIcon style={{ fontSize: iconSize }} />

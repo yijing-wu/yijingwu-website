@@ -13,6 +13,7 @@ export default function FeaturedProjects() {
             index={index}
             picture={featuredProject.picture}
             title={featuredProject.title}
+            abbreviation={featuredProject.abbreviation}
             description={featuredProject.description}
             tools={featuredProject.tools}
             mainLink={featuredProject.mainLink}

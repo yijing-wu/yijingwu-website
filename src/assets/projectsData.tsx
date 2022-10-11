@@ -13,7 +13,8 @@ import SmithChartProfile from "./projects/simithChart.png";
 
 const aquaGolffCollectionRobot = {
   title: "Automatic Collection Robot for Aqua Golf",
-  picture: CameraCalibrationProfile,
+  abbreviation: "aquaGolffCollectionRobot",
+  picture: null,
   year: 2020,
   location: "Tongji University",
   description: (
@@ -44,6 +45,7 @@ const aquaGolffCollectionRobot = {
 
 const borderlandsVRGame = {
   title: "Borderlands (VR FPS Game)",
+  abbreviation: "borderlandsVRGame",
   picture: null,
   year: 2018,
   location: "Shanghai Jiao Tong University",
@@ -63,6 +65,7 @@ const borderlandsVRGame = {
 
 const cameraCalibration = {
   title: "Camera Calibration and Distortion Correction",
+  abbreviation: "cameraCalibration",
   picture: CameraCalibrationProfile,
   year: 2020,
   location: "Huawei Technologies",
@@ -89,6 +92,7 @@ const cameraCalibration = {
 
 const circleDjango = {
   title: "Circle",
+  abbreviation: "circleDjango",
   picture: CircleDjangoProfile,
   year: 2022,
   location: "-",
@@ -130,6 +134,7 @@ const circleDjango = {
 
 const courseSelectionSystem = {
   title: "Course Selection Management System",
+  abbreviation: "courseSelectionSystem",
   picture: CourseSelectionProfile,
   year: 2020,
   location: "Tongji University",
@@ -150,6 +155,7 @@ const courseSelectionSystem = {
 
 const intelligentCars = {
   title: "Electromagnetic Guiding Intelligent Cars",
+  abbreviation: "intelligentCars",
   picture: IntelligentCarsProfile,
   year: 2019,
   location: "Tongji University",
@@ -168,6 +174,7 @@ const intelligentCars = {
 
 const heartDiseaseAnalysis = {
   title: "Heart Disease Analysis",
+  abbreviation: "heartDiseaseAnalysis",
   picture: null,
   year: 2022,
   location: "Northeastern University",
@@ -194,6 +201,7 @@ const heartDiseaseAnalysis = {
 
 const eeg = {
   title: "Classification of EEG Signals during Working Memory Maintenance",
+  abbreviation: "eeg",
   picture: EEGProfile,
   year: 2021,
   location: "-",
@@ -207,6 +215,7 @@ const eeg = {
 
 const personalWebsiteV2 = {
   title: "Personal Website V2",
+  abbreviation: "personalWebsiteV2",
   picture: PersonalWebsiteProfile,
   year: 2022,
   location: "-",
@@ -225,6 +234,7 @@ const personalWebsiteV2 = {
 
 const rubikCubeHelper = {
   title: "Rubik’s Cube Helper",
+  abbreviation: "rubikCubeHelper",
   picture: RubiksCubeProfile,
   year: 2021,
   location: "Northeastern University",
@@ -250,6 +260,7 @@ const rubikCubeHelper = {
 
 const santoriniGame = {
   title: "Santorini",
+  abbreviation: "santoriniGame",
   picture: null,
   year: 2022,
   location: "-",
@@ -274,6 +285,7 @@ const santoriniGame = {
 
 const smithChart = {
   title: "Smith Chart Tool",
+  abbreviation: "smithChart",
   picture: SmithChartProfile,
   year: 2019,
   location: "Tongji University",

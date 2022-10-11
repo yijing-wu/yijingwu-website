@@ -166,6 +166,7 @@ export default function Archive() {
                     iconSize={20}
                     marginWidth={10}
                     buttonHoverColor={myMintGreen}
+                    contentAbbreviation={project.abbreviation}
                     mainLink={project.mainLink}
                     isMainLinkExternal={project.isMainLinkExternal}
                     githubLink={project.githubLink}

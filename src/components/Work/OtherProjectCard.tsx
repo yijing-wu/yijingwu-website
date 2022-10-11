@@ -63,6 +63,7 @@ export default function OtherProjectCard({ project }: OtherProjectCardProps) {
             <Links
               iconSize={22}
               marginWidth={10}
+              contentAbbreviation={project.abbreviation}
               mainLink={project.mainLink}
               isMainLinkExternal={project.isMainLinkExternal}
               githubLink={project.githubLink}

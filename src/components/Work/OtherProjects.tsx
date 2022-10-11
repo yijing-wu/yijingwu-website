@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 
+import * as GoogleAnalytics from "../../config/GoogleAnalytics";
 import { Button, Text } from "../../MyLibrary";
 import { myMintGreen } from "../../MyLibrary/MyColors";
 import { OtherProjectsData } from "../../assets/projectsData";
@@ -13,6 +14,9 @@ export default function OtherProjects() {
 
   const _handleShowMore = () => {
     setOnShowMore(!onShowMore);
+    if (!onShowMore) {
+      GoogleAnalytics.logEvent("click-show-more-projects", "project", "button");
+    }
   };
 
   return (
@@ -35,6 +39,13 @@ export default function OtherProjects() {
             color: myMintGreen,
             fontSize: 14,
             fontFamily: "SFMono-Regular",
+          }}
+          onClick={() => {
+            GoogleAnalytics.logEvent(
+              "click-view-archieve-projects",
+              "project",
+              "button"
+            );
           }}
         >
           {"view the archive"}

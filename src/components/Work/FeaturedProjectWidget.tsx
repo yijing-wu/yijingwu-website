@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
+import * as GoogleAnalytics from "../../config/GoogleAnalytics";
 import { Button, Links, Text } from "../../MyLibrary";
 import {
   myLightNavy,
@@ -40,6 +41,7 @@ function FeaturedProjectImage({ picture, title }: FeaturedProjectImageProps) {
 interface FeaturedProjectDetailsProps {
   textRightAlign: boolean;
   title: string;
+  abbreviation: string;
   description: React.ReactNode;
   tools: string[];
   mainLink?: string;
@@ -50,6 +52,7 @@ interface FeaturedProjectDetailsProps {
 function FeaturedProjectDetails({
   textRightAlign,
   title,
+  abbreviation,
   description,
   tools,
   mainLink,
@@ -135,6 +138,7 @@ function FeaturedProjectDetails({
                 buttonColor={myMilkYellow}
                 marginWidth={15}
                 buttonHoverColor={myMintGreen}
+                contentAbbreviation={abbreviation}
                 mainLink={mainLink}
                 isMainLinkExternal={isMainLinkExternal}
                 githubLink={githubLink}
@@ -148,6 +152,13 @@ function FeaturedProjectDetails({
                   style={{ textDecoration: "none", color: myMintGreen }}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => {
+                    GoogleAnalytics.logEvent(
+                      "click-mainLink-of-" + abbreviation,
+                      "project",
+                      "button"
+                    );
+                  }}
                 >
                   {"Learn More"}
                 </a>
@@ -155,6 +166,13 @@ function FeaturedProjectDetails({
                 <Link
                   to={mainLink ? mainLink : ""}
                   style={{ textDecoration: "none", color: myMintGreen }}
+                  onClick={() => {
+                    GoogleAnalytics.logEvent(
+                      "click-mainLink-of-" + abbreviation,
+                      "project",
+                      "button"
+                    );
+                  }}
                 >
                   {"Learn More"}
                 </Link>
@@ -171,6 +189,7 @@ export interface FeaturedProjectWidgetProps {
   index: number;
   picture?: any;
   title: string;
+  abbreviation: string;
   description: React.ReactNode;
   tools: string[];
   mainLink?: string;
@@ -182,6 +201,7 @@ export default function FeaturedProjectWidget({
   index,
   picture,
   title,
+  abbreviation,
   description,
   tools,
   mainLink,
@@ -202,6 +222,7 @@ export default function FeaturedProjectWidget({
               textRightAlign={!isOdd}
               title={title}
               description={description}
+              abbreviation={abbreviation}
               tools={tools}
               mainLink={mainLink}
               isMainLinkExternal={isMainLinkExternal}
@@ -215,6 +236,7 @@ export default function FeaturedProjectWidget({
             <FeaturedProjectDetails
               textRightAlign={!isOdd}
               title={title}
+              abbreviation={abbreviation}
               description={description}
               tools={tools}
               mainLink={mainLink}
