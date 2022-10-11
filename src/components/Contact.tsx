@@ -47,9 +47,8 @@ function Contact() {
           marginBottom: 30,
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu
-        felis bibendum. Dui vivamus arcu felis bibendum.
+        Thank you for taking the time to view my personal website. Whether you
+        have any questions or just want to say hi, feel free to contact me!
       </Text>
       <Button link={"mailto:yijingwu.w@gmail.com"}>{"Say Hi"}</Button>
     </div>
