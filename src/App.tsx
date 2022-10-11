@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Grid from "@mui/material/Grid";
@@ -22,6 +22,7 @@ import {
   IntelligentCars,
   SmithChart,
 } from "./projectPages";
+import { initGoogleAnalytics } from "./config/GoogleAnalytics";
 
 const router = createBrowserRouter(
   [
@@ -64,6 +65,10 @@ const router = createBrowserRouter(
 );
 
 export default function App() {
+  useEffect(() => {
+    initGoogleAnalytics(process.env.GOOGLE_ANALYTICS_TRACKING_ID);
+  });
+
   return (
     <div className="App">
       <NavBar />
