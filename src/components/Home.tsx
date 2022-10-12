@@ -8,6 +8,8 @@ import {
   myMintGreen,
 } from "../MyLibrary/MyColors";
 import { myName, myBriefIntro } from "../assets/myData";
+// @ts-ignore
+import MyResume from "../assets/Yijing_WU.pdf";
 
 function Home() {
   return (
@@ -47,10 +49,11 @@ function Home() {
       {/* Resume: updated on Oct 9th, 2022 */}
       <Button
         onClick={() => {
-          window.open(
-            "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
-            "_blank"
-          );
+          // window.open(
+          //   "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
+          //   "_blank"
+          // );
+          window.open(MyResume, "_blank");
           GoogleAnalytics.logEvent("click-resume", "click-resume", "button");
         }}
       >
