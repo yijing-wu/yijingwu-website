@@ -37,7 +37,7 @@ function Home() {
           color: myMilkYellowC0Alpha,
         }}
       >
-        {"I write Code."}
+        {"A software developer."}
       </Text>
       <div style={{ width: "65%", marginBottom: 30 }}>
         <Text style={{ fontSize: 22, color: myTextGrey, lineHeight: 1.3 }}>

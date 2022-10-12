@@ -24,8 +24,8 @@ const jobsData = [
       </div>,
       <div>
         Performed local camera and microphone selection and check features
-        through <div style={highlightStyle}>{` Agora `}</div> to ensure video
-        chat quality
+        through <div style={highlightStyle}>{` Agora `}</div> to ensure{" "}
+        <div style={highlightStyle}>{` WebRTC `}</div> video quality
       </div>,
       <div>
         Collaborated with product and design team to conduct visual changes and
@@ -33,8 +33,8 @@ const jobsData = [
         visualization
       </div>,
       <div>
-        Implemented beta testing and unit tests to locate Upduo web/mobile app
-        issues
+        Implemented beta testing and unit tests to locate issues and maintained
+        Upduo web/mobile app
       </div>,
     ],
   },
@@ -79,7 +79,8 @@ const jobsData = [
       </div>,
       <div>
         Extracted features of EEG signals by empirical mode decomposition (EMD)
-        and phase space reconstruction (PSR){" "}
+        and phase space reconstruction (PSR) with{" "}
+        <div style={highlightStyle}>{` MATLAB `}</div>
       </div>,
       <div>
         Executed Support Vector Machine (SVM), K-nearest neighbor (KNN), Random
