@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0eb7fca0.css",
-    "main.js": "/static/js/main.336a858c.js",
+    "main.js": "/static/js/main.5a2782ff.js",
     "static/js/787.b53db9e9.chunk.js": "/static/js/787.b53db9e9.chunk.js",
     "static/media/intelligentCarsCollections.jpg": "/static/media/intelligentCarsCollections.28b8d24654f136594bc7.jpg",
     "static/media/intelligentCar.jpg": "/static/media/intelligentCar.c8a5bda2d677972f20b8.jpg",
@@ -17,7 +17,6 @@
     "static/media/eegEquipments.png": "/static/media/eegEquipments.7bcf76d5fcb56bdccaf8.png",
     "static/media/modelConstructionProcess.png": "/static/media/modelConstructionProcess.886f1ea009bf7434a057.png",
     "static/media/ComparisonPrefrontalandVisualCortex.png": "/static/media/ComparisonPrefrontalandVisualCortex.e09c11387632e79fbf25.png",
-    "static/media/Yijing_WU.pdf": "/static/media/Yijing_WU.5dfe112a68bbd5c9203f.pdf",
     "static/media/workingMemory.png": "/static/media/workingMemory.10f6a19e624876e28abc.png",
     "static/media/circle.png": "/static/media/circle.c1c01956621442f2938f.png",
     "static/media/RadiusTraversalofCTM.png": "/static/media/RadiusTraversalofCTM.21b6c08150edde1e412e.png",
@@ -69,11 +68,11 @@
     "static/media/CylindricalProjectionSideView.png": "/static/media/CylindricalProjectionSideView.4ab57074458ce00d5933.png",
     "index.html": "/index.html",
     "main.0eb7fca0.css.map": "/static/css/main.0eb7fca0.css.map",
-    "main.336a858c.js.map": "/static/js/main.336a858c.js.map",
+    "main.5a2782ff.js.map": "/static/js/main.5a2782ff.js.map",
     "787.b53db9e9.chunk.js.map": "/static/js/787.b53db9e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb7fca0.css",
-    "static/js/main.336a858c.js"
+    "static/js/main.5a2782ff.js"
   ]
 }
