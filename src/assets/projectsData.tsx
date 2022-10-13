@@ -245,7 +245,7 @@ const personalWebsiteV2 = {
   tools: ["React", "Typescript", "CSS"],
   mainLink: "/",
   isMainLinkExternal: true, // inorder to redirect
-  githubLink: "",
+  githubLink: "https://github.com/yijing-wu/personal-website-v2",
 };
 
 const rubikCubeHelper = {
