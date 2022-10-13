@@ -7,7 +7,7 @@ import {
   myMilkYellowC0Alpha,
   myMintGreen,
 } from "../MyLibrary/MyColors";
-import { myName, myBriefIntro } from "../assets/myData";
+import { myName, myTitle, myBriefIntro } from "../assets/myData";
 
 function Home() {
   return (
@@ -37,7 +37,7 @@ function Home() {
           color: myMilkYellowC0Alpha,
         }}
       >
-        {"A software developer."}
+        {myTitle}
       </Text>
       <div style={{ width: "65%", marginBottom: 30 }}>
         <Text style={{ fontSize: 22, color: myTextGrey, lineHeight: 1.3 }}>

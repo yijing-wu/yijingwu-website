@@ -1,6 +1,8 @@
 // Home Page
 const myName = "Yijing Wu";
 
+const myTitle = "A software developer.";
+
 const myBriefIntro =
   "I’m a software developer specializing in both front-end and back-end web/mobile development. Also familiar with Computer Vision and Signal Processing algorithms. I'm passionate about delivering ideas into reality via coding.";
 
@@ -41,4 +43,11 @@ const mySkillList = [
   "Django",
 ];
 
-export { myName, myBriefIntro, myAboutMe, myEducationList, mySkillList };
+export {
+  myName,
+  myTitle,
+  myBriefIntro,
+  myAboutMe,
+  myEducationList,
+  mySkillList,
+};
