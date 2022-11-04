@@ -220,7 +220,7 @@ const eeg = {
   abbreviation: "eeg",
   picture: EEGProfile,
   year: 2021,
-  location: "-",
+  location: "Tongji University",
   description:
     "Constructed classification models of brain during working memory maintenance based on 128-channel EEG dataset for material-specific Sternberg task through feature selection and machine learning",
   tools: ["Python", "Matlab", "EEG", "SVM", "RF", "Machine-learning"],
@@ -237,12 +237,25 @@ const personalWebsiteV2 = {
   location: "-",
   description: (
     <div>
-      Second version of my personal website, built with{" "}
-      <div style={highlightStyle}>React</div> and hosted on{" "}
-      <div style={highlightStyle}>GitHub Pages</div>. This website!
+      <div>This website!</div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Second version of my personal website, built with{" "}
+        <div style={highlightStyle}>React</div> and{" "}
+        <div style={highlightStyle}>Material-UI</div>.
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Integrated with <div style={highlightStyle}>Google Analytics</div> for
+        traffic and user interaction tracking.
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Hosted on <div style={highlightStyle}>GitHub Pages</div>.
+      </div>
     </div>
   ),
-  tools: ["React", "Typescript", "CSS"],
+  tools: ["React", "Typescript", "Material-UI", "GA", "CSS"],
   mainLink: "/",
   isMainLinkExternal: true, // inorder to redirect
   githubLink: "https://github.com/yijing-wu/personal-website-v2",
@@ -258,24 +271,32 @@ const rubikCubeHelper = {
     <>
       <div>
         - A dynamic and cross-browser compatible web application with{" "}
-        <div style={highlightStyle}>React</div>, aiming to bring more
-        personalized Rubik's Cube experience
+        <div style={highlightStyle}>React</div> and{" "}
+        <div style={highlightStyle}>JavaScript</div>, aiming to bring more
+        personalized Cube experience
       </div>
       <div style={{ height: 4 }} />
       <div>
         - Implemented responsive design, accessibility development, and multiple
         interactions met WCAG 2.1 AA standard
       </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Delivered <div style={highlightStyle}>Express.js</div> and{" "}
+        <div style={highlightStyle}>Node.js</div> backend, deployed on{" "}
+        <div style={highlightStyle}>AWS</div> to enable data persistence and
+        provided real-time world records
+      </div>
     </>
   ),
-  tools: ["React", "Javascript", "Node.js", "AWS"],
+  tools: ["React", "Javascript", "Node.js", "Express.js", "AWS"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
 };
 
 const santoriniGame = {
-  title: "Santorini",
+  title: "Santorini Game",
   abbreviation: "santoriniGame",
   picture: null,
   year: 2022,
@@ -283,17 +304,31 @@ const santoriniGame = {
   description: (
     <>
       <div>
-        A strategy-based board game playable with 2 or 3 players, developed in{" "}
-        <div style={highlightStyle}>Java</div>.
+        - A strategy-based board game playable with 2 players, developed backend
+        in <div style={highlightStyle}>Java</div> and{" "}
+        <div style={highlightStyle}>Apache Maven</div>, user interface in{" "}
+        <div style={highlightStyle}>React</div> and{" "}
+        <div style={highlightStyle}>TypeScript</div>.
       </div>
       <div style={{ height: 4 }} />
       <div>
-        Players need to choose their God Card, build towers on the battlefield
-        and climb the 3rd level before their enemies even notice it.
+        - Designed the game system with <div style={highlightStyle}>MVC</div>{" "}
+        design pattern for a more extensible and robust system
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Applied <div style={highlightStyle}>Restful API</div> for
+        server-client data exchange
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Implemented unit tests and integration tests with over 90% test
+        coverage using <div style={highlightStyle}>JUnit</div> and{" "}
+        <div style={highlightStyle}>ts-jest</div>
       </div>
     </>
   ),
-  tools: ["Java", "Maven"],
+  tools: ["Java", "Apache Maven", "React", "TypeScript", "MVC"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -327,14 +362,14 @@ const FeaturedProjectsData = [
 ];
 
 const OtherProjectsData = [
-  courseSelectionSystem,
-  personalWebsiteV2,
   santoriniGame,
-  smithChart,
+  personalWebsiteV2,
+  courseSelectionSystem,
+  aquaGolffCollectionRobot,
+  intelligentCars,
   borderlandsVRGame,
   heartDiseaseAnalysis,
-  intelligentCars,
-  aquaGolffCollectionRobot,
+  smithChart,
 ];
 
 const ArchivedProjectsData = [

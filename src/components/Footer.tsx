@@ -1,11 +1,11 @@
 import React from "react";
-import { myNavy } from "../MyLibrary/MyColors";
+import { myMilkYellow, myNavy } from "../MyLibrary/MyColors";
 import { Text } from "../MyLibrary";
 
 function Footer() {
   return (
     <footer>
-      <div style={{ backgroundColor: myNavy }}>
+      <div style={{ backgroundColor: myNavy, textAlign: "center" }}>
         <Text
           style={{
             fontFamily: "SFMono-Regular",
@@ -15,7 +15,18 @@ function Footer() {
             paddingBottom: 30,
           }}
         >
-          &copy; 2022 by Yijing Wu.
+          {"Inspired by "}
+          <a
+            href={"https://github.com/bchiang7/v4"}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textDecoration: "none",
+              color: myMilkYellow,
+            }}
+          >
+            Brittany Chiang
+          </a>
         </Text>
       </div>
     </footer>

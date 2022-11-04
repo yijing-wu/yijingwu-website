@@ -12,7 +12,9 @@ const jobsData = [
       <div>
         Worked as a full-stack engineer to build and improve Upduo's web/mobile
         app via <div style={highlightStyle}>{` React, React Native `}</div>and
-        <div style={highlightStyle}>{` Django`}</div> with
+        <div style={highlightStyle}>{` Django`}</div> with{" "}
+        <div style={highlightStyle}>{` TypeScript`}</div> and{" "}
+        <div style={highlightStyle}>{` Python`}</div>
       </div>,
       <div>
         Integrated iOS framework <div style={highlightStyle}>{` CallKit `}</div>
