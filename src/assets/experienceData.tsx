@@ -10,11 +10,26 @@ const jobsData = [
     link: "https://www.upduo.com/",
     duties: [
       <div>
-        Worked as a full-stack engineer to build and improve Upduo's web/mobile
-        app via <div style={highlightStyle}>{` React, React Native `}</div>and
-        <div style={highlightStyle}>{` Django`}</div> with{" "}
-        <div style={highlightStyle}>{` TypeScript`}</div> and{" "}
-        <div style={highlightStyle}>{` Python`}</div>
+        Performed as a full-stack engineer in an agile team to build, improve
+        and maintain cross-platform web and mobile applications
+      </div>,
+      <div>
+        Collaborated with the product and design team and conducted{" "}
+        <div style={highlightStyle}>{` TypeScript `}</div> programming (
+        <div style={highlightStyle}>{`React`}</div> and{" "}
+        <div style={highlightStyle}>{`React Native`}</div> with{" "}
+        <div style={highlightStyle}>{`Redux `}</div>
+        state container) to deliver new UI/UX for front-end, including
+        animations, graph data visualization, kudos interface, etc.
+      </div>,
+
+      <div>
+        Worked on <div style={highlightStyle}>{` Django`}</div> backend by{" "}
+        <div style={highlightStyle}>{` Python`}</div>, applied celery to manage
+        asynchronous tasks, updated{" "}
+        <div style={highlightStyle}>{` GraphQL`}</div> while maintaining minimal
+        calls to the <div style={highlightStyle}>{` PostgreSQL `}</div>database,
+        implemented unit and integration tests to validate the behavior
       </div>,
       <div>
         Integrated iOS framework <div style={highlightStyle}>{` CallKit `}</div>
@@ -26,17 +41,8 @@ const jobsData = [
       </div>,
       <div>
         Performed local camera and microphone selection and check features
-        through <div style={highlightStyle}>{` Agora `}</div> to ensure{" "}
-        <div style={highlightStyle}>{` WebRTC `}</div> video quality
-      </div>,
-      <div>
-        Collaborated with product and design team to conduct visual changes and
-        deliver new user interface, such as animation, time windows, data
-        visualization
-      </div>,
-      <div>
-        Implemented beta testing and unit tests to locate issues and maintained
-        Upduo web/mobile app
+        through Agora to ensure <div style={highlightStyle}>{` WebRTC `}</div>{" "}
+        video quality
       </div>,
     ],
   },

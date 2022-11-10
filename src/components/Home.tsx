@@ -40,7 +40,7 @@ function Home() {
         {myTitle}
       </Text>
       <div style={{ width: "65%", marginBottom: 30 }}>
-        <Text style={{ fontSize: 22, color: myTextGrey, lineHeight: 1.3 }}>
+        <Text style={{ fontSize: 24, color: myTextGrey, lineHeight: 1.3 }}>
           {myBriefIntro}
         </Text>
       </div>

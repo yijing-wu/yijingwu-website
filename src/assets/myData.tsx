@@ -4,7 +4,8 @@ const myName = "Yijing Wu";
 const myTitle = "A software developer.";
 
 const myBriefIntro =
-  "I’m a software developer specializing in both front-end and back-end web/mobile development. Also familiar with Computer Vision and Signal Processing algorithms. I'm passionate about delivering ideas into reality via coding.";
+  "I’m a software developer specializing in web and mobile development. I'm passionate about delivering ideas into reality via coding.";
+// "I’m a software developer specializing in both front-end and back-end web/mobile development. Also familiar with Computer Vision and Signal Processing algorithms. I'm passionate about delivering ideas into reality via coding.";
 
 // About Page
 const myAboutMe = [
