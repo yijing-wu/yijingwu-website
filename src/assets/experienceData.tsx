@@ -5,7 +5,7 @@ const jobsData = [
     company: "Upduo",
     abbreviation: "Upduo",
     title: "Software Engineer Co-op",
-    time: "June 2022 - Present",
+    time: "June 2022 - December 2022",
     location: "United States",
     link: "https://www.upduo.com/",
     duties: [
