@@ -39,7 +39,7 @@ const aquaGolffCollectionRobot = {
       </div>
     </>
   ),
-  tools: ["Python", "C++", "RaspberryPi", "OpenCV"],
+  tools: ["Python,", "C++,", "RaspberryPi,", "OpenCV"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -59,7 +59,7 @@ const borderlandsVRGame = {
       <div style={highlightStyle}>Maya</div> .
     </div>
   ),
-  tools: ["Unity", "C#", "Maya", "VR"],
+  tools: ["Unity,", "C#,", "Maya,", "VR"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -86,7 +86,7 @@ const cameraCalibration = {
       </div>
     </>
   ),
-  tools: ["Python", "C", "OpenCV", "Anaconda"],
+  tools: ["Python,", "C,", "OpenCV,", "Anaconda"],
   mainLink: "/cameracalibration",
   isMainLinkExternal: false,
   githubLink: "",
@@ -135,7 +135,7 @@ const circleDjango = {
       <div>- Deployed on Railway</div>
     </>
   ),
-  tools: ["Django", "Python", "PostgreSQL", "JavaScript", "Railway"],
+  tools: ["Djangom", "Python,", "PostgreSQL,", "JavaScript,", "Railway"],
   mainLink: "https://circle.up.railway.app/",
   isMainLinkExternal: true,
   githubLink: "https://github.com/yijing-wu/Circle",
@@ -156,7 +156,7 @@ const courseSelectionSystem = {
       <div style={highlightStyle}>MySQL</div>.
     </div>
   ),
-  tools: ["Vue.js", "Node.js", "MySQL", "ECharts", "Javascript"],
+  tools: ["Vue.js,", "Node.js,", "MySQL,", "ECharts,", "Javascript"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "https://github.com/yijing-wu/CourseSelectionSystem",
@@ -175,7 +175,7 @@ const intelligentCars = {
       curves, ramps, intersections open-circuits and barricades.
     </div>
   ),
-  tools: ["C", "Keil uVision"],
+  tools: ["C,", "Keil uVision"],
   mainLink: "/intelligentcars",
   isMainLinkExternal: false,
   githubLink: "",
@@ -209,10 +209,41 @@ const heartDiseaseAnalysis = {
       from CDC, to explore the Personal Key Indicators of Heart Disease
     </div>
   ),
-  tools: ["Python", "Sklearn", "RandomForest", "KNN"],
+  tools: ["Python,", "Sklearn,", "RandomForest,", "KNN"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
+};
+
+const huskyLovesShare = {
+  title: "Husky Loves Share",
+  abbreviation: "huskyLovesShare",
+  picture: null,
+  year: 2023,
+  location: "Northeastern University",
+  description: (
+    <>
+      <div>
+        - Collerbated in a five people team in Northeastern Hackathon to provide
+        solutions for mutual community support
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Built a cross-platform application that enables people to share rides
+        easier when commuting for the Northeastern University community
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Acted as the leading engineer, developed on{" "}
+        <div style={highlightStyle}>{`Expo`}</div>, and delivered the prototype
+        within a one and half day's hacking time
+      </div>
+    </>
+  ),
+  tools: ["Expo,", "React Native,", "JavaScript", "Xcode"],
+  mainLink: "",
+  isMainLinkExternal: false,
+  githubLink: "https://github.com/HuskyLovesShare/CarPool",
 };
 
 const eeg = {
@@ -223,7 +254,7 @@ const eeg = {
   location: "Tongji University",
   description:
     "Constructed classification models of brain during working memory maintenance based on 128-channel EEG dataset for material-specific Sternberg task through feature selection and machine learning",
-  tools: ["Python", "Matlab", "EEG", "SVM", "RF", "Machine-learning"],
+  tools: ["Python,", "Matlab,", "EEG,", "SVM,", "RF,", "Machine-learning"],
   mainLink: "/eeg",
   isMainLinkExternal: false,
   githubLink: "",
@@ -255,7 +286,7 @@ const personalWebsiteV2 = {
       </div>
     </div>
   ),
-  tools: ["React", "Typescript", "Material-UI", "GA", "CSS"],
+  tools: ["React,", "Typescript,", "Material-UI,", "GA,", "CSS"],
   mainLink: "/",
   isMainLinkExternal: true, // inorder to redirect
   githubLink: "https://github.com/yijing-wu/personal-website-v2",
@@ -289,7 +320,7 @@ const rubikCubeHelper = {
       </div>
     </>
   ),
-  tools: ["React", "Javascript", "Node.js", "Express.js", "AWS"],
+  tools: ["React,", "Javascript,", "Node.js,", "Express.js,", "AWS"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -328,7 +359,7 @@ const santoriniGame = {
       </div>
     </>
   ),
-  tools: ["Java", "Apache Maven", "React", "TypeScript", "MVC"],
+  tools: ["Java,", "Apache Maven,", "React,", "TypeScript,", "MVC"],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -347,7 +378,7 @@ const smithChart = {
       for radio frequency (RF) engineering.
     </div>
   ),
-  tools: ["Matlab", "Simulink"],
+  tools: ["Matlab,", "Simulink"],
   mainLink: "/smithchart",
   isMainLinkExternal: false,
   githubLink: "",
@@ -367,6 +398,7 @@ const OtherProjectsData = [
   courseSelectionSystem,
   aquaGolffCollectionRobot,
   intelligentCars,
+  huskyLovesShare,
   borderlandsVRGame,
   heartDiseaseAnalysis,
   smithChart,
@@ -381,6 +413,7 @@ const ArchivedProjectsData = [
   eeg,
   intelligentCars,
   heartDiseaseAnalysis,
+  huskyLovesShare,
   personalWebsiteV2,
   rubikCubeHelper,
   santoriniGame,
