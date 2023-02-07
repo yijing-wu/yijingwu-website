@@ -224,8 +224,8 @@ const huskyLovesShare = {
   description: (
     <>
       <div>
-        - Collerbated in a five people team in Northeastern Hackathon to provide
-        solutions for mutual community support
+        - Collaborated with a five people team in Northeastern Hackathon to
+        provide solutions for mutual community support
       </div>
       <div style={{ height: 4 }} />
       <div>
