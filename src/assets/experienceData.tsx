@@ -32,12 +32,13 @@ const jobsData = [
         implemented unit and integration tests to validate the behavior
       </div>,
       <div>
-        Integrated iOS framework <div style={highlightStyle}>{` CallKit `}</div>
-        and Android <div style={highlightStyle}>{` ConnectionService `}</div>
-        via Callkeep and modified the native code with
-        <div style={highlightStyle}>{` Objective-C `}</div> and
-        <div style={highlightStyle}>{` Java `}</div> to realize a video call
-        notification feature
+        Integrated <div style={highlightStyle}>{` iOS `}</div> framework CallKit
+        and Android ConnectionService via Callkeep and coded with
+        <div style={highlightStyle}>{` Objective-C `}</div> in{" "}
+        <div style={highlightStyle}>{` Xcode `}</div> and
+        <div style={highlightStyle}>{` Java `}</div> in{" "}
+        <div style={highlightStyle}>{` Android Studio `}</div> to realize a
+        video call notification feature
       </div>,
       <div>
         Performed local camera and microphone selection and check features

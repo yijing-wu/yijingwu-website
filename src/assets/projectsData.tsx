@@ -313,15 +313,17 @@ const rubikCubeHelper = {
   description: (
     <>
       <div>
-        - A dynamic and cross-browser compatible web application with{" "}
-        <div style={highlightStyle}>React</div> and{" "}
-        <div style={highlightStyle}>JavaScript</div>, aiming to bring more
-        personalized Cube experience
+        - A dynamic and cross-platform application with{" "}
+        <div style={highlightStyle}>React</div>,{" "}
+        <div style={highlightStyle}>JavaScript</div> on web and{" "}
+        <div style={highlightStyle}>Swift</div> on{" "}
+        <div style={highlightStyle}>iOS</div>, aiming to bring more personalized
+        Cube experience
       </div>
       <div style={{ height: 4 }} />
       <div>
         - Implemented responsive design, accessibility development, and multiple
-        interactions met WCAG 2.1 AA standard
+        interactions met WCAG 2.1 AA standard on web
       </div>
       <div style={{ height: 4 }} />
       <div>
@@ -396,6 +398,26 @@ const smithChart = {
   githubLink: "",
 };
 
+const stockTrackingApplication = {
+  title: "Stock Tracking",
+  abbreviation: "stockTracking",
+  picture: null,
+  year: 2022,
+  location: "Northeastern University",
+  description: (
+    <>
+      <div>
+        - Built an IOS application with Xcode and CocoaPods in Swift to help
+        stockholders to check and manage stock information
+      </div>
+    </>
+  ),
+  tools: ["Swift,", "Xcode,", "CocoaPods,", "RESTful API"],
+  mainLink: "",
+  isMainLinkExternal: false,
+  githubLink: "",
+};
+
 // export components
 const FeaturedProjectsData = [
   circleDjango,
@@ -430,6 +452,7 @@ const ArchivedProjectsData = [
   rubikCubeHelper,
   santoriniGame,
   smithChart,
+  stockTrackingApplication,
 ];
 
 export {
@@ -446,8 +469,10 @@ export {
   eeg,
   intelligentCars,
   heartDiseaseAnalysis,
+  huskyLovesShare,
   personalWebsiteV2,
   rubikCubeHelper,
   santoriniGame,
   smithChart,
+  stockTrackingApplication,
 };
