@@ -188,26 +188,38 @@ const heartDiseaseAnalysis = {
   year: 2022,
   location: "Northeastern University",
   description: (
-    <div>
-      Conducted EDA(exploratory data analysis), machine learning methods and
-      feature importance analysis on a 400k adult samples{" "}
-      <a
-        className="underline-animation"
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease"
-        onClick={() => {
-          GoogleAnalytics.logEvent(
-            "click-heartDiseaseAnalysis-dataset",
-            "project-details",
-            "minor-button"
-          );
-        }}
-      >
-        dataset
-      </a>{" "}
-      from CDC, to explore the Personal Key Indicators of Heart Disease
-    </div>
+    <>
+      <div>
+        - Conducted EDA(exploratory data analysis), machine learning methods and
+        feature importance analysis on a 400k adult samples{" "}
+        <a
+          className="underline-animation"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease"
+          onClick={() => {
+            GoogleAnalytics.logEvent(
+              "click-heartDiseaseAnalysis-dataset",
+              "project-details",
+              "minor-button"
+            );
+          }}
+        >
+          dataset
+        </a>{" "}
+        from CDC, to explore the Personal Key Indicators of Heart Disease
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Resampled the database with SMOTE and Under-sampling and make
+        comparisons
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Increased the average accuracy from 77% to 91% and reached 77% F-1
+        score
+      </div>
+    </>
   ),
   tools: ["Python,", "Sklearn,", "RandomForest,", "KNN"],
   mainLink: "",
