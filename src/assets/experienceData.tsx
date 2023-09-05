@@ -2,9 +2,55 @@ import { highlightStyle } from "../MyLibrary/MyStyles";
 
 const jobsData = [
   {
+    company: "Autodesk",
+    abbreviation: "Autodesk",
+    title: "Cloud DevOps Engineer Intern",
+    time: "May 2023 - Present",
+    location: "United States",
+    link: "https://www.autodesk.com/",
+    duties: [
+      <div>
+        Developed a Serverless Slack bot in
+        <div style={highlightStyle}>{` Python `}</div>, integrating ServiceNow
+        and JIRA to streamline ticket management via Slack APIs and automate
+        issue resolution by Generative AI techniques, resulting in a significant
+        reduction in support response times
+      </div>,
+      <div>
+        Utilized <div style={highlightStyle}>{` Azure OpenAI LLM `}</div> and
+        <div style={highlightStyle}>{` Gen AI `}</div> techniques, applying
+        <div style={highlightStyle}>{` prompt engineering, model
+        inference, embeddings `}</div>
+        and <div style={highlightStyle}>{` NLP`}</div> for interactive
+        conversations on custom data, including document search, API calling,
+        and data plotting functionalities
+      </div>,
+      <div>
+        Established a robust <div style={highlightStyle}>{` CI/CD `}</div>
+        pipeline using <div style={highlightStyle}>{` Terraform `}</div> and
+        <div style={highlightStyle}>{` Jenkins`}</div>, following Infrastructure
+        as Code (<div style={highlightStyle}>{` IaC`}</div>) principles to
+        enable end-to-end cloud deployment automation, thereby enhancing
+        efficiency and maintaining consistency
+      </div>,
+      <div>
+        Utilized <div style={highlightStyle}>{` AWS Serverless`}</div>{" "}
+        architecture, employing services such as{" "}
+        <div style={highlightStyle}>{` Lambda, ECR, S3 Bucket,
+        DynamoDB`}</div>
+        , SageMaker, VPC, API Gateway, IAM, CloudWatch, and KMS to optimize the
+        backend infrastructure for seamless operations
+      </div>,
+      <div>
+        Trained a multi-class classification model with sklearn and Logistic
+        Regression, achieved an 81% accuracy in issue diagnosis
+      </div>,
+    ],
+  },
+  {
     company: "Upduo",
     abbreviation: "Upduo",
-    title: "Software Engineer Co-op",
+    title: "Software Engineer Intern",
     time: "June 2022 - December 2022",
     location: "United States",
     link: "https://www.upduo.com/",

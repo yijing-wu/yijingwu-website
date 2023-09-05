@@ -75,14 +75,14 @@ const cameraCalibration = {
     <>
       <div>
         - Processed video flows of camera sensor for self-driving vehicles with
-        camera calibration and distortion correction algorithm.
+        camera calibration and distortion correction algorithm
       </div>
       <div style={{ height: 4 }} />
       <div>
         - Developed mapping table and video processing algorithms for digital
         signal processors based on{" "}
         <div style={highlightStyle}>{` OpenCV `}</div> with{" "}
-        <div style={highlightStyle}>{` C `}</div>.
+        <div style={highlightStyle}>{` C `}</div>
       </div>
     </>
   ),
@@ -135,7 +135,7 @@ const circleDjango = {
       <div>- Deployed on Railway</div>
     </>
   ),
-  tools: ["Djangom", "Python,", "PostgreSQL,", "JavaScript,", "Railway"],
+  tools: ["Django,", "Python,", "PostgreSQL,", "JavaScript,", "Railway"],
   mainLink: "https://circle.up.railway.app/",
   isMainLinkExternal: true,
   githubLink: "https://github.com/yijing-wu/Circle",
@@ -328,9 +328,11 @@ const rubikCubeHelper = {
       <div style={{ height: 4 }} />
       <div>
         - Delivered <div style={highlightStyle}>Express.js</div> and{" "}
-        <div style={highlightStyle}>Node.js</div> backend, deployed on{" "}
-        <div style={highlightStyle}>AWS</div> to enable data persistence and
-        provided real-time world records
+        <div style={highlightStyle}>Node.js</div> backend, hosted on{" "}
+        <div style={highlightStyle}>AWS EC2</div>, and integrated{" "}
+        <div style={highlightStyle}>MongoDB</div> to facilitate data storage,
+        enabling real-time tracking of world records and enhanced user
+        engagement
       </div>
     </>
   ),
@@ -436,6 +438,7 @@ const OtherProjectsData = [
   borderlandsVRGame,
   heartDiseaseAnalysis,
   smithChart,
+  stockTrackingApplication,
 ];
 
 const ArchivedProjectsData = [

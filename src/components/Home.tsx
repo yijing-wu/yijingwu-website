@@ -44,14 +44,17 @@ function Home() {
           {myBriefIntro}
         </Text>
       </div>
-      {/* Resume: updated on Oct 9th, 2022 */}
+      {/* Resume: updated on Sep 4th, 2023 */}
       <Button
         onClick={() => {
           // window.open(
           //   "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
           //   "_blank"
           // );
-          window.open(process.env.PUBLIC_URL + "/YijingWu.pdf", "_blank");
+          window.open(
+            process.env.PUBLIC_URL + "/Yijing_Wu_Resume.pdf",
+            "_blank"
+          );
           GoogleAnalytics.logEvent("click-resume", "click-resume", "button");
         }}
       >
