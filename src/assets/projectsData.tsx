@@ -315,28 +315,39 @@ const rubikCubeHelper = {
       <div>
         - A dynamic and cross-platform application with{" "}
         <div style={highlightStyle}>React</div>,{" "}
-        <div style={highlightStyle}>JavaScript</div> on web and{" "}
-        <div style={highlightStyle}>Swift</div> on{" "}
-        <div style={highlightStyle}>iOS</div>, aiming to bring more personalized
-        Cube experience
+        <div style={highlightStyle}>JavaScript</div> on web, and created{" "}
+        <div style={highlightStyle}>iOS</div> client using{" "}
+        <div style={highlightStyle}>Swift</div> and{" "}
+        <div style={highlightStyle}>CocoaPods</div>, aiming to bring more
+        personalized Cube learning experience
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Delivered <div style={highlightStyle}>Node.js</div> with{" "}
+        <div style={highlightStyle}>Express.js</div> backend, hosted on{" "}
+        <div style={highlightStyle}>AWS EC2</div>for robust performance
+      </div>
+      <div style={{ height: 4 }} />
+      <div>
+        - Designed and built <div style={highlightStyle}>RESTful API</div> to
+        enable CRUD and authentication, integrated with{" "}
+        <div style={highlightStyle}>MongoDB</div> for efficient data storage
       </div>
       <div style={{ height: 4 }} />
       <div>
         - Implemented responsive design, accessibility development, and multiple
         interactions met WCAG 2.1 AA standard on web
       </div>
-      <div style={{ height: 4 }} />
-      <div>
-        - Delivered <div style={highlightStyle}>Express.js</div> and{" "}
-        <div style={highlightStyle}>Node.js</div> backend, hosted on{" "}
-        <div style={highlightStyle}>AWS EC2</div>, and integrated{" "}
-        <div style={highlightStyle}>MongoDB</div> to facilitate data storage,
-        enabling real-time tracking of world records and enhanced user
-        engagement
-      </div>
     </>
   ),
-  tools: ["React,", "Javascript,", "Node.js,", "Express.js,", "AWS"],
+  tools: [
+    "React,",
+    "Javascript,",
+    "Node.js,",
+    "Express.js,",
+    "MongoDB,",
+    "AWS",
+  ],
   mainLink: "",
   isMainLinkExternal: false,
   githubLink: "",
@@ -364,7 +375,7 @@ const santoriniGame = {
       </div>
       <div style={{ height: 4 }} />
       <div>
-        - Applied <div style={highlightStyle}>Restful API</div> for
+        - Applied <div style={highlightStyle}>RESTful API</div> for
         server-client data exchange
       </div>
       <div style={{ height: 4 }} />

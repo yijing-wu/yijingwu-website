@@ -4,13 +4,13 @@ const myName = "Yijing Wu";
 const myTitle = "A software developer.";
 
 const myBriefIntro =
-  "I’m a software developer specializing in web development and cloud computing. I'm passionate about delivering ideas into reality via coding.";
+  "I’m a software developer specializing in web development, cloud computing and Generative AI. I'm passionate about delivering ideas into reality via coding.";
 // "I’m a software developer specializing in both front-end and back-end web/mobile development. Also familiar with Computer Vision and Signal Processing algorithms. I'm passionate about delivering ideas into reality via coding.";
 
 // About Page
 const myAboutMe = [
   "Hello! My name is Yijing. Welcome to my page!",
-  "I'm a software developer as well as a master's student at Northeastern University. I have experience with constructing web and mobile applications, as well as cloud DevOps. ",
+  "I'm a software developer as well as a master's student at Northeastern University. I have experience with constructing web and mobile applications, cloud DevOps as well as Generative AI. ",
   "I enjoy the process of developing, akin to solving puzzles, requiring a comprehensive understanding of structure, beginning with small components, and gradually assembling them into a cohesive whole.",
   "Previously, I honed my skills at Upduo, where I served as a full-stack engineer, crafting engaging and effective peer learning experiences for users. ",
   "Today, I'm diving into Cloud DevOps at Autodesk. My role involves building AWS cloud CI/CD pipelines and unleashing the potential of Gen AI.",
@@ -40,13 +40,15 @@ const mySkillList = [
   "JavaScript",
   "React Native",
   "TypeScript",
-  "AWS",
-  "Java",
   "Node.js",
   "Docker",
-  "CI/CD",
-  "Terraform",
   "Django",
+  "CI/CD",
+  "Linux",
+  "Jenkins",
+  "Terraform",
+  "AWS",
+  "Generative AI",
 ];
 
 export {

@@ -11,19 +11,24 @@ const jobsData = [
     duties: [
       <div>
         Developed a Serverless Slack bot in
-        <div style={highlightStyle}>{` Python `}</div>, integrating ServiceNow
-        and JIRA to streamline ticket management via Slack APIs and automate
-        issue resolution by Generative AI techniques, resulting in a significant
-        reduction in support response times
+        <div style={highlightStyle}>{` Python`}</div>, automating issue
+        resolution by <div style={highlightStyle}>{` Generative AI `}</div>
+        techniques to support Azure migration
       </div>,
       <div>
-        Utilized <div style={highlightStyle}>{` Azure OpenAI LLM `}</div> and
-        <div style={highlightStyle}>{` Gen AI `}</div> techniques, applying
-        <div style={highlightStyle}>{` prompt engineering, model
-        inference, embeddings `}</div>
-        and <div style={highlightStyle}>{` NLP`}</div> for interactive
-        conversations on custom data, including document search, API calling,
-        and data plotting functionalities
+        Integrated ServiceNow and JIRA with Slack APIs to streamline ticket
+        management, resulting in a significant reduction in support response
+        times
+      </div>,
+      <div>
+        Applied <div style={highlightStyle}>{` Azure OpenAI `}</div> and{" "}
+        <div style={highlightStyle}>{` LangChain`}</div>, utilizing
+        <div style={highlightStyle}>{` prompt
+        engineering, embeddings, NLP `}</div>
+        and <div style={highlightStyle}>{` LLM Agents `}</div>
+        to achieve retrieval augmented generation (
+        <div style={highlightStyle}>{`RAG`}</div>), data analysis and
+        interactive conversations
       </div>,
       <div>
         Established a robust <div style={highlightStyle}>{` CI/CD `}</div>
@@ -34,8 +39,8 @@ const jobsData = [
         efficiency and maintaining consistency
       </div>,
       <div>
-        Utilized <div style={highlightStyle}>{` AWS Serverless`}</div>{" "}
-        architecture, employing services such as{" "}
+        Implemented serverless architecture in{" "}
+        <div style={highlightStyle}>{` AWS`}</div>, utilizing services such as{" "}
         <div style={highlightStyle}>{` Lambda, ECR, S3 Bucket,
         DynamoDB`}</div>
         , SageMaker, VPC, API Gateway, IAM, CloudWatch, and KMS to optimize the
@@ -56,35 +61,32 @@ const jobsData = [
     link: "https://www.upduo.com/",
     duties: [
       <div>
-        Performed as a full-stack engineer in an agile team to build, improve
+        Contributed as a full-stack engineer in an agile team to build, improve
         and maintain cross-platform web and mobile applications
       </div>,
       <div>
-        Collaborated with the product and design team and conducted{" "}
-        <div style={highlightStyle}>{` TypeScript `}</div> programming (
-        <div style={highlightStyle}>{`React`}</div> and{" "}
-        <div style={highlightStyle}>{`React Native`}</div> with{" "}
-        <div style={highlightStyle}>{`Redux `}</div>
-        state container) to deliver new UI/UX for front-end, including
-        animations, graph data visualization, kudos interface, etc.
+        Collaborated with product and design team, conducting front-end
+        development in <div style={highlightStyle}>{`React`}</div> and{" "}
+        <div style={highlightStyle}>{`React Native`}</div> along with Redux
+        through <div style={highlightStyle}>{` TypeScript `}</div> to enhance
+        UI/UX, delivered graph data visualization, animations, and kudos
+        interface, etc
       </div>,
-
       <div>
         Worked on <div style={highlightStyle}>{` Django`}</div> backend by{" "}
-        <div style={highlightStyle}>{` Python`}</div>, applied celery to manage
-        asynchronous tasks, updated{" "}
-        <div style={highlightStyle}>{` GraphQL`}</div> while maintaining minimal
-        calls to the <div style={highlightStyle}>{` PostgreSQL `}</div>database,
-        implemented unit and integration tests to validate the behavior
+        <div style={highlightStyle}>{` Python`}</div>, applied Celery for
+        asynchronous task management, optimized{" "}
+        <div style={highlightStyle}>{` GraphQL`}</div> to minimize queries to
+        <div style={highlightStyle}>{` PostgreSQL `}</div>database, and built
+        Unit Testing and Integration Testing to ensure application robustness
       </div>,
       <div>
-        Integrated <div style={highlightStyle}>{` iOS `}</div> framework CallKit
-        and Android ConnectionService via Callkeep and coded with
-        <div style={highlightStyle}>{` Objective-C `}</div> in{" "}
-        <div style={highlightStyle}>{` Xcode `}</div> and
-        <div style={highlightStyle}>{` Java `}</div> in{" "}
-        <div style={highlightStyle}>{` Android Studio `}</div> to realize a
-        video call notification feature
+        Implemented a video call notification feature using{" "}
+        <div style={highlightStyle}>{` iOS `}</div> framework CallKit through{" "}
+        <div style={highlightStyle}>{` Objective-C `}</div> in Xcode and Android
+        ConnectionService thorugh <div style={highlightStyle}>{` Java `}</div>{" "}
+        in <div style={highlightStyle}>{` Android`}</div>, leading to a
+        significant enhancement in match pick-up rate
       </div>,
       <div>
         Performed local camera and microphone selection and check features
