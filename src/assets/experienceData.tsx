@@ -4,8 +4,23 @@ const jobsData = [
   {
     company: "Autodesk",
     abbreviation: "Autodesk",
+    title: "Software Engineer",
+    time: "January 2024 - Present",
+    location: "United States",
+    link: "https://www.autodesk.com/",
+    duties: [
+      <div>
+        Working as a Software Engineer in the Cloud Infrastructure team to,
+        focusing on building cloud infrastructure and services for Autodesk
+        products
+      </div>,
+    ],
+  },
+  {
+    company: "Autodesk",
+    abbreviation: "Autodesk",
     title: "Cloud DevOps Engineer Intern",
-    time: "May 2023 - Present",
+    time: "May 2023 - December 2023",
     location: "United States",
     link: "https://www.autodesk.com/",
     duties: [

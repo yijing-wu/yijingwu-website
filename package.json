@@ -1,7 +1,7 @@
 {
   "name": "yijingwu-website",
   "homepage": "https://www.yijingwu.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@adobe/css-tools": "^4.4.0",

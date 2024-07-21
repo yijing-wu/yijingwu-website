@@ -23,7 +23,7 @@ const myEducationList = [
     degree: "Master",
     major: "Information Systems",
     startDate: "September 2021",
-    endDate: "Present",
+    endDate: "December 2023",
   },
   {
     school: "Tongji University",
