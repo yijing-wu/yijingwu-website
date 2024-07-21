@@ -45,7 +45,7 @@ function Home() {
         </Text>
       </div>
       {/* Resume: updated on Sep 4th, 2023 */}
-      <Button
+      {/* <Button
         onClick={() => {
           // window.open(
           //   "https://drive.google.com/file/d/1U-nazBTQMz54kme54UCse3lFwpQVe7gY/view?usp=sharing",
@@ -59,7 +59,7 @@ function Home() {
         }}
       >
         <div style={{ padding: 5, fontSize: 15 }}>{"RESUME"}</div>
-      </Button>
+      </Button> */}
     </div>
   );
 }
