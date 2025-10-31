@@ -10,9 +10,28 @@ const jobsData = [
     link: "https://www.autodesk.com/",
     duties: [
       <div>
-        Working as a Software Engineer in the Cloud Infrastructure team to,
-        focusing on building cloud infrastructure and services for Autodesk
-        products
+        Leading cloud infrastructure initiatives, building scalable services for
+        Autodesk products, supporting 30+ teams and 1200+ machines
+      </div>,
+      <div>
+        Designed and deployed an on-demand AWS platform (EC2, Lambda, S3,
+        DynamoDB) with secure APIs via{" "}
+        <div style={highlightStyle}>Azure AD</div>
+      </div>,
+      <div>
+        Developed a <div style={highlightStyle}>Jenkins plugin</div> and
+        automated image baking with <div style={highlightStyle}>Ansible</div> &{" "}
+        <div style={highlightStyle}>Spinnaker</div>
+      </div>,
+      <div>
+        Deployed AI-powered multi-agent platform using{" "}
+        <div style={highlightStyle}>Azure OpenAI</div> &{" "}
+        <div style={highlightStyle}>LangChain</div> to accelerate
+        troubleshooting across teams
+      </div>,
+      <div>
+        Acted as both Engineer & Scrum Master in hybrid cloud migration,
+        coordinating roadmap and technical trade-offs
       </div>,
     ],
   },
@@ -25,45 +44,38 @@ const jobsData = [
     link: "https://www.autodesk.com/",
     duties: [
       <div>
-        Developed a Serverless Slack bot in
-        <div style={highlightStyle}>{` Python`}</div>, automating issue
-        resolution by <div style={highlightStyle}>{` Generative AI `}</div>
-        techniques to support Azure migration
+        Built a <div style={highlightStyle}>Generative AI Slack bot</div> in{" "}
+        <div style={highlightStyle}>Python</div> to automate ticket triage,
+        reducing support response time by significant margin
       </div>,
       <div>
-        Integrated ServiceNow and JIRA with Slack APIs to streamline ticket
-        management, resulting in a significant reduction in support response
-        times
+        Integrated <div style={highlightStyle}>ServiceNow</div> and{" "}
+        <div style={highlightStyle}>JIRA</div> APIs with Slack for seamless
+        ticket management
       </div>,
       <div>
-        Applied <div style={highlightStyle}>{` Azure OpenAI `}</div> and{" "}
-        <div style={highlightStyle}>{` LangChain`}</div>, utilizing
-        <div style={highlightStyle}>{` prompt
-        engineering, embeddings, NLP `}</div>
-        and <div style={highlightStyle}>{` LLM Agents `}</div>
-        to achieve retrieval augmented generation (
-        <div style={highlightStyle}>{`RAG`}</div>), data analysis and
-        interactive conversations
+        Developed <div style={highlightStyle}>RAG pipelines</div> using{" "}
+        <div style={highlightStyle}>Azure OpenAI</div> &{" "}
+        <div style={highlightStyle}>LangChain</div> with embeddings, prompt
+        engineering, and multi-agent LLMs
       </div>,
       <div>
-        Established a robust <div style={highlightStyle}>{` CI/CD `}</div>
-        pipeline using <div style={highlightStyle}>{` Terraform `}</div> and
-        <div style={highlightStyle}>{` Jenkins`}</div>, following Infrastructure
-        as Code (<div style={highlightStyle}>{` IaC`}</div>) principles to
-        enable end-to-end cloud deployment automation, thereby enhancing
-        efficiency and maintaining consistency
+        Built end-to-end <div style={highlightStyle}>CI/CD pipelines</div> with{" "}
+        <div style={highlightStyle}>Terraform</div> &{" "}
+        <div style={highlightStyle}>Jenkins</div> following{" "}
+        <div style={highlightStyle}>IaC</div> best practices
       </div>,
       <div>
         Implemented serverless architecture in{" "}
-        <div style={highlightStyle}>{` AWS`}</div>, utilizing services such as{" "}
-        <div style={highlightStyle}>{` Lambda, ECR, S3 Bucket,
-        DynamoDB`}</div>
-        , SageMaker, VPC, API Gateway, IAM, CloudWatch, and KMS to optimize the
-        backend infrastructure for seamless operations
+        <div style={highlightStyle}>AWS</div> (Lambda, ECR, S3, DynamoDB,
+        SageMaker, VPC, API Gateway), ensuring scalable and resilient backend
+        services
       </div>,
       <div>
-        Trained a multi-class classification model with sklearn and Logistic
-        Regression, achieved an 81% accuracy in issue diagnosis
+        Trained multi-class classification model with{" "}
+        <div style={highlightStyle}>sklearn</div>, achieving{" "}
+        <div style={highlightStyle}>81% accuracy</div> for automated issue
+        diagnosis
       </div>,
     ],
   },
@@ -80,33 +92,30 @@ const jobsData = [
         and maintain cross-platform web and mobile applications
       </div>,
       <div>
-        Collaborated with product and design team, conducting front-end
-        development in <div style={highlightStyle}>{`React`}</div> and{" "}
-        <div style={highlightStyle}>{`React Native`}</div> along with Redux
-        through <div style={highlightStyle}>{` TypeScript `}</div> to enhance
-        UI/UX, delivered graph data visualization, animations, and kudos
-        interface, etc
+        Developed cross-platform web & mobile applications using{" "}
+        <div style={highlightStyle}>React</div>,{" "}
+        <div style={highlightStyle}>React Native</div>,{" "}
+        <div style={highlightStyle}>Redux</div>,{" "}
+        <div style={highlightStyle}>TypeScript</div>,{" "}
+        <div style={highlightStyle}>Swift</div>, and{" "}
+        <div style={highlightStyle}>Java</div>
       </div>,
       <div>
-        Worked on <div style={highlightStyle}>{` Django`}</div> backend by{" "}
-        <div style={highlightStyle}>{` Python`}</div>, applied Celery for
-        asynchronous task management, optimized{" "}
-        <div style={highlightStyle}>{` GraphQL`}</div> to minimize queries to
-        <div style={highlightStyle}>{` PostgreSQL `}</div>database, and built
-        Unit Testing and Integration Testing to ensure application robustness
+        Optimized <div style={highlightStyle}>Django</div> backend with{" "}
+        <div style={highlightStyle}>Celery</div> and{" "}
+        <div style={highlightStyle}>GraphQL</div>, improving query performance
+        and database efficiency
       </div>,
       <div>
-        Implemented a video call notification feature using{" "}
-        <div style={highlightStyle}>{` iOS `}</div> framework CallKit through{" "}
-        <div style={highlightStyle}>{` Objective-C `}</div> in Xcode and Android
-        ConnectionService thorugh <div style={highlightStyle}>{` Java `}</div>{" "}
-        in <div style={highlightStyle}>{` Android`}</div>, leading to a
-        significant enhancement in match pick-up rate
+        Implemented <div style={highlightStyle}>iOS & Android</div> video call
+        notifications using <div style={highlightStyle}>CallKit</div> and{" "}
+        <div style={highlightStyle}>ConnectionService</div>, integrated{" "}
+        <div style={highlightStyle}>Agora</div> to ensure{" "}
+        <div style={highlightStyle}>WebRTC</div> video quality
       </div>,
       <div>
-        Performed local camera and microphone selection and check features
-        through Agora to ensure <div style={highlightStyle}>{` WebRTC `}</div>{" "}
-        video quality
+        Delivered enhanced UI/UX features including animations, graph
+        visualizations, and interactive components
       </div>,
     ],
   },
@@ -119,8 +128,8 @@ const jobsData = [
     link: "https://www.huawei.com/en/corporate-information",
     duties: [
       <div>
-        Applied calibration and distortion correction algorithm to process video
-        flows of camera sensor for self-driving vehicles
+        Applied calibration and distortion correction algorithms to self-driving
+        vehicle camera video streams
       </div>,
       <div>
         Achieved reduction of distortion correction errors from 1.395 ± 0.136
@@ -128,10 +137,9 @@ const jobsData = [
         single-point mapping with <div style={highlightStyle}>{` Python `}</div>
       </div>,
       <div>
-        Increased processing efficiency of DSP by developing mapping table and
-        video processing algorithms for digital signal processors with
-        <div style={highlightStyle}>{` C`}</div> based on
-        <div style={highlightStyle}>{` OpenCV`}</div>
+        Optimized DSP efficiency with mapping tables and video processing
+        algorithms using <div style={highlightStyle}>C</div> and{" "}
+        <div style={highlightStyle}>OpenCV</div>
       </div>,
     ],
   },
@@ -144,9 +152,9 @@ const jobsData = [
     link: "",
     duties: [
       <div>
-        Constructed classification models of brain during working memory
-        maintenance based on 128-channel EEG dataset for material-specific
-        Sternberg task through feature selection and machine learning with{" "}
+        Built classification models of brain during working memory maintenance
+        based on 128-channel EEG dataset for material-specific Sternberg task
+        through feature selection and machine learning with{" "}
         <div style={highlightStyle}>{` Python `}</div>
       </div>,
       <div>

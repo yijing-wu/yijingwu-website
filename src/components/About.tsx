@@ -56,8 +56,8 @@ export default function About() {
                     <div>
                       <div style={{ paddingBottom: 3 }}>{education.school}</div>
                       <div style={{ color: myTextGrey, paddingBottom: 8 }}>
-                        {education.degree} - {education.major} -{" "}
-                        {education.endDate}
+                        {education.degree} in {education.major} |{" "}
+                        {education.startDate} -{education.endDate}
                       </div>
                     </div>
                   </li>

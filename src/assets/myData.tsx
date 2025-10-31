@@ -1,20 +1,18 @@
 // Home Page
 const myName = "Yijing Wu";
 
-const myTitle = "A software developer.";
+// const myTitle = "A software developer.";
+const myTitle = "";
 
 const myBriefIntro =
-  "I’m a software developer specializing in web development, cloud computing and Generative AI. I'm passionate about delivering ideas into reality via coding.";
+  "I build scalable web and mobile applications, cloud infrastructure, and intelligent systems powered by Generative AI. I love turning complex ideas into reliable, elegant solutions through code.";
 // "I’m a software developer specializing in both front-end and back-end web/mobile development. Also familiar with Computer Vision and Signal Processing algorithms. I'm passionate about delivering ideas into reality via coding.";
 
 // About Page
 const myAboutMe = [
   "Hello! My name is Yijing. Welcome to my page!",
-  "I'm a software developer and have experience with constructing web and mobile applications, cloud DevOps as well as Generative AI. ",
-  "I enjoy the process of developing, akin to solving puzzles, requiring a comprehensive understanding of structure, beginning with small components, and gradually assembling them into a cohesive whole.",
-  "Previously, I honed my skills at Upduo, where I served as a full-stack engineer, crafting engaging and effective peer learning experiences for users. ",
-  "Today, I'm diving into Cloud DevOps at Autodesk. My role involves building AWS cloud CI/CD pipelines and unleashing the potential of Gen AI.",
-  //   "I used to work as an algorithm engineer, focusing on camera calibration for self-driving vehicles, and also as a research assistant specializing in EEG signal processing.",
+  "I’m a software engineer with hands-on experience across full-stack development, cloud DevOps, and Generative AI. I enjoy the creative process of engineering — like solving intricate puzzles — where each piece contributes to a seamless, functional system.",
+  "I’m always curious about bridging the gap between AI and software engineering, leveraging LLMs and automation to build smarter, faster, and more collaborative systems.",
 ];
 
 const myEducationList = [

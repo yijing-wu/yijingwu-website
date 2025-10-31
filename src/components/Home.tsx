@@ -14,7 +14,7 @@ function Home() {
     <div
       id="head"
       style={{
-        paddingTop: 150,
+        paddingTop: 200,
         paddingBottom: 150,
       }}
     >
@@ -30,7 +30,7 @@ function Home() {
       <Text style={{ fontFamily: "Calibre-Semibold", fontSize: 80 }}>
         {myName}
       </Text>
-      <Text
+      {/* <Text
         style={{
           fontFamily: "Calibre-Semibold",
           fontSize: 80,
@@ -38,7 +38,7 @@ function Home() {
         }}
       >
         {myTitle}
-      </Text>
+      </Text> */}
       <div style={{ width: "65%", marginBottom: 30 }}>
         <Text style={{ fontSize: 24, color: myTextGrey, lineHeight: 1.3 }}>
           {myBriefIntro}
