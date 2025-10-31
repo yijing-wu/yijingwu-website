@@ -214,10 +214,10 @@ export default function FeaturedProjectWidget({
     <Grid container style={{ marginBottom: 100 }}>
       {!isOdd ? (
         <>
-          <Grid item xs={7} style={{ position: "relative" }}>
+          <Grid size={{ xs: 7 }} style={{ position: "relative" }}>
             <FeaturedProjectImage picture={picture} title={title} />
           </Grid>
-          <Grid item xs={5} style={{ textAlign: "right", marginTop: 10 }}>
+          <Grid size={{ xs: 5 }} style={{ textAlign: "right", marginTop: 10 }}>
             <FeaturedProjectDetails
               textRightAlign={!isOdd}
               title={title}
@@ -232,7 +232,7 @@ export default function FeaturedProjectWidget({
         </>
       ) : (
         <>
-          <Grid item xs={5} style={{ textAlign: "left", marginTop: 10 }}>
+          <Grid size={{ xs: 5 }} style={{ textAlign: "left", marginTop: 10 }}>
             <FeaturedProjectDetails
               textRightAlign={!isOdd}
               title={title}
@@ -244,7 +244,7 @@ export default function FeaturedProjectWidget({
               githubLink={githubLink}
             />
           </Grid>
-          <Grid item xs={7} style={{ position: "relative" }}>
+          <Grid size={{ xs: 7 }} style={{ position: "relative" }}>
             <FeaturedProjectImage picture={picture} title={title} />
           </Grid>
         </>

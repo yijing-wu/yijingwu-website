@@ -19,7 +19,7 @@ export default function OtherProjectCard({ project }: OtherProjectCardProps) {
   const [onCardMouseFocused, setOnCardMouseFocuse] = useState(false);
 
   return (
-    <Grid item xs={12} sm={6} md={4} style={{ marginBottom: 20 }}>
+    <Grid size={{ xs: 12, sm: 6, md: 4 }} style={{ marginBottom: 20 }}>
       <div
         className="card"
         style={{

@@ -20,7 +20,7 @@ export default function About() {
     >
       <Title index={1} content={"About Me"} />
       <Grid container>
-        <Grid item xs={7}>
+        <Grid size={{ xs: 7 }}>
           <div
             style={{
               paddingTop: 10,
@@ -92,7 +92,7 @@ export default function About() {
             </ul>
           </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid size={{ xs: 5 }}>
           <div style={{ textAlign: "center" }}>
             <img
               src={ProfilePhoto}
